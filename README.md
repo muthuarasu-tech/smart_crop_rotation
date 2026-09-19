@@ -8,6 +8,29 @@ analysis, and environmental conditions — with explainable, human-readable reco
 
 ---
 
+## ⚡ Quick Start (Windows, easiest)
+
+**Double-click `RUNME.bat`** in the project folder. It will, on first run only:
+
+1. Create a Python virtual environment (`venv`)
+2. Install dependencies from `requirements.txt`
+3. Train the model (`train_model.py`) if `models\crop_model.pkl` is missing
+4. Launch the app and open your browser at **http://127.0.0.1:5000**
+
+First registered user becomes the **host**; everyone else needs a normal account to log in.
+
+Manual equivalent (same four steps):
+
+```powershell
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python train_model.py
+python app.py
+```
+
+---
+
 ## 1. Features
 
 | Feature | Description |
