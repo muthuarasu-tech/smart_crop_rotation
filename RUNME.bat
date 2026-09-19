@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 title Smart Crop Rotation - Launcher
 cd /d "%~dp0"
 
@@ -63,10 +63,33 @@ if not exist models\crop_model.pkl (
 REM ---- 5. Start the app ----
 echo [4/4] Starting the web app...
 echo.
-echo  Open this URL in your browser:  http://127.0.0.1:5000
-echo  Press Ctrl+C in this window to stop the server.
+
+REM --- Launch the server in its own (minimized) window so it keeps
+REM --- running while this launcher waits for it to be ready.
+start "Smart Crop Rotation server" /min venv\Scripts\python.exe app.py
+
+REM --- Wait until the server is actually listening (health endpoint) ---
+set SERVER_OK=0
+for /l %%i in (1,1,45) do (
+  >nul 2>nul curl -s -o nul http://127.0.0.1:5000/api/health
+  if not errorlevel 1 (
+    set SERVER_OK=1
+    goto :server_up
+  )
+  ping -n 2 127.0.0.1 >nul
+)
+echo [ERROR] Server did not start within ~90s. A server window should be open
+echo         on your taskbar - check it for an error message, then close it.
+pause
+exit /b 1
+
+:server_up
+echo  Server is up. Opening your browser:  http://127.0.0.1:5000
+echo  The server runs in its own "Smart Crop Rotation server" window.
+echo  Close that window to stop the app.
 echo.
 start "" http://127.0.0.1:5000
-venv\Scripts\python.exe app.py
+goto :eof
 
+:done
 pause
