@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}About Smart Crop Rotation{% endblock %}
+{% block content %}
+
+<section class="page-head">
+    <h1>&#8505; About Smart Crop Rotation</h1>
+    <p>AI-Based Intelligent Crop Rotation Recommendation System</p>
+</section>
+
+<div class="cards-grid two">
+    <div class="card">
+        <h3 class="card-title">Platform Overview</h3>
+        <p>
+            Smart Crop Rotation is an intelligent decision-support platform that helps farmers
+            choose <strong>which crop to plant next season</strong> by combining several
+            decision layers:
+        </p>
+        <ul class="check-list">
+            <li>&#10003; Machine Learning models (Decision Tree, Random Forest, Gradient Boosting, KNN)</li>
+            <li>&#10003; Agronomic crop-rotation rules (crop families, nitrogen fixing)</li>
+            <li>&#10003; Soil nutrient management (N-P-K, pH)</li>
+            <li>&#10003; Environmental conditions (rainfall, temperature, humidity, water)</li>
+            <li>&#10003; Sustainability and soil-health scoring</li>
+            <li>&#10003; Explainable recommendations ("Why this crop?")</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3 class="card-title">Technology Stack</h3>
+        <ul class="tiny-list">
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Chart.js</li>
+            <li><strong>Backend:</strong> Python 3.11+, Flask</li>
+            <li><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn</li>
+            <li><strong>Visualisation:</strong> Chart.js (web), Matplotlib (notebook)</li>
+            <li><strong>Model storage:</strong> Joblib</li>
+            <li><strong>Database:</strong> SQLite (stdlib <code>sqlite3</code>)</li>
+            <li><strong>Charts offline fallback:</strong> chart tables still render without internet</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3 class="card-title">How the recommendation works</h3>
+        <ol>
+            <li>User enters soil, season and environmental inputs.</li>
+            <li>The trained ML pipeline predicts a probability for every crop.</li>
+            <li><code>crop_rotation.py</code> scores each crop using rotation rules (family, water, disease, season, soil).</li>
+            <li><code>soil_analysis.py</code> computes Soil Health and Sustainability scores.</li>
+            <li>The final ranking combines ML (45%) + rotation rules (40%) + environment (15%).</li>
+            <li>The top crop plus three alternatives are shown with full explanations.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3 class="card-title">Project Structure</h3>
+        <pre class="code-block">smart_crop_rotation/
+├── app.py                 Flask application
+├── train_model.py         Model training &amp; evaluation
+├── crop_rotation.py       Rotation engine + knowledge base
+├── soil_analysis.py       Soil health &amp; sustainability scores
+├── scripts/generate_dataset.py   Dataset generator
+├── data/crop_dataset.csv  Training dataset
+├── models/crop_model.pkl  Saved best pipeline (joblib)
+├── database/              SQLite database
+├── templates/             HTML pages
+├── static/                CSS + JavaScript
+├── notebooks/             Analysis notebook
+├── docs/                  Report, viva, slides</pre>
+    </div>
+</div>
+
+<div class="cards-grid two">
+    <div class="card">
+        <h3 class="card-title">Scoring Model</h3>
+        <p>The platform scores every candidate crop using three complementary metrics:</p>
+        <ul class="check-list">
+            <li>&#10003; <strong>Soil Health (0&ndash;100):</strong> nutrient balance (N-P-K, pH) against crop requirements</li>
+            <li>&#10003; <strong>Rotation Score (0&ndash;100):</strong> crop-family rotation, nitrogen fixing, water/disease carryover</li>
+            <li>&#10003; <strong>Sustainability (0&ndash;100):</strong> soil-friendly farming practices score</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3 class="card-title">Data &amp; Responsibility</h3>
+        <p>
+            Models are trained on a structured agricultural dataset bundled with the platform and
+            continuously logged as recommendations are made. Recommendations are
+            <strong>decision-support estimates</strong> &mdash; always validate planting decisions
+            with local soil testing and certified agronomic advice.
+        </p>
+    </div>
+</div>
+
+{% endblock %}

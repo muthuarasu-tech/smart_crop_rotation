@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% block title %}SMART CROP ROTATION - Home{% endblock %}
+{% block main_class %}main-full{% endblock %}
+{% block content %}
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-bg">
+        <span class="float-leaf leaf1">&#127807;</span>
+        <span class="float-leaf leaf2">&#127793;</span>
+        <span class="float-leaf leaf3">&#127811;</span>
+        <span class="float-leaf leaf4">&#127795;</span>
+        <span class="float-leaf leaf5">&#127806;</span>
+        <span class="float-leaf leaf6">&#127816;</span>
+        <span class="float-leaf leaf7">&#127813;</span>
+        <span class="float-leaf leaf8">&#127840;</span>
+    </div>
+
+    <div class="container hero-inner">
+        <div class="hero-copy">
+            <span class="hero-badge">&#127793; AI-Powered Crop Advisory</span>
+            <h1>SMART <span>CROP</span> ROTATION</h1>
+            <p class="hero-sub">"AI-Based Intelligent Crop Rotation Recommendation System"</p>
+            <p class="hero-desc">
+                Helping farmers decide <strong>which crop to plant next season</strong> using
+                Machine Learning, agriculture rules, soil-nutrient analysis and crop-rotation logic.
+            </p>
+            <div class="hero-actions">
+                <a href="{{ url_for('recommend') }}" class="btn btn-gold btn-lg">&#10004; Start Recommendation</a>
+                <a href="{{ url_for('about') }}" class="btn btn-glass btn-lg">&#8505; Explore the Project</a>
+            </div>
+            <div class="hero-trust">
+                <span>&#10003; Explainable AI</span>
+                <span>&#10003; 4 ML Models</span>
+                <span>&#10003; Soil &amp; Sustainability Scores</span>
+            </div>
+        </div>
+
+        <!-- Mini preview dashboard -->
+        <div class="hero-preview reveal">
+            <div class="preview-card">
+                <div class="preview-head">
+                    <span class="preview-dot"></span>
+                    <span class="preview-dot"></span>
+                    <span class="preview-dot"></span>
+                    <span class="preview-title">Smart Recommendation</span>
+                </div>
+                <div class="preview-body">
+                    <div class="preview-field">
+                        <span>Previous Crop</span>
+                        <strong>{{ latest.previous_crop if latest else "Rice" }}</strong>
+                    </div>
+                    <div class="preview-arrow">&#8595;</div>
+                    <div class="preview-result">
+                        <div class="preview-crop">{{ latest.recommended_crop if latest else "Green Gram" }}</div>
+                        <div class="preview-suit"><div class="circular" style="--val: {{ latest.rotation_score if latest else 0 }};"><div class="circular-inner"><strong>{{ latest.rotation_score if latest else 0 }}%</strong><small>suitability</small></div></div></div>
+                    </div>
+                    <div class="preview-stats">
+                        <div class="ps"><small>Soil Health</small><b>{{ latest.soil_health if latest else "--" }}</b></div>
+                        <div class="ps"><small>Rotation</small><b>{{ latest.rotation_score if latest else "--" }}</b></div>
+                        <div class="ps"><small>Sustain.</small><b>{{ latest.sustainability if latest else "--" }}</b></div>
+                    </div>
+                </div>
+                <div class="preview-foot">
+                    <span class="pill pill-good">&#9733; Top Recommendation</span>
+                    <span>3 alternatives</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="hero-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,32 C360,70 720,0 1080,28 C1260,42 1380,40 1440,36 L1440,60 L0,60 Z" fill="#F3F7F1"/>
+    </svg>
+</div>
+
+<!-- ================= STATS BAND ================= -->
+<section class="stats-band">
+    <div class="container stats-grid">
+        <div class="stat-cell reveal">
+            <span class="stat-cell-icon">&#127807;</span>
+            <div class="stat-cell-num"><span class="count" data-target="17">0</span>+</div>
+            <div class="stat-cell-label">Crops Supported</div>
+        </div>
+        <div class="stat-cell reveal">
+            <span class="stat-cell-icon">&#129504;</span>
+            <div class="stat-cell-num"><span class="count" data-target="4">0</span></div>
+            <div class="stat-cell-label">ML Models</div>
+        </div>
+        <div class="stat-cell reveal">
+            <span class="stat-cell-icon">&#128220;</span>
+            <div class="stat-cell-num"><span class="count" data-target="700">0</span>+</div>
+            <div class="stat-cell-label">Dataset Records</div>
+        </div>
+        <div class="stat-cell reveal">
+            <span class="stat-cell-icon">&#11088;</span>
+            <div class="stat-cell-num"><span class="count" data-target="100">0</span></div>
+            <div class="stat-cell-label">Scoring Scale</div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LIVE DASHBOARD ================= -->
+<section class="section container">
+    <div class="section-head reveal">
+        <h2>Your Farm at a Glance</h2>
+        <p class="muted">Live scores from your latest recommendation</p>
+    </div>
+    <div class="cards-grid five">
+        <div class="card stat reveal" style="--d:.0s">
+            <div class="stat-icon">&#127793;</div>
+            <div class="stat-label">Soil Health</div>
+            <div class="stat-value"><span class="count" data-target="{{ latest.soil_health if latest else 0 }}">{{ latest.soil_health if latest else "--" }}</span><small>/100</small></div>
+            <div class="progress"><div class="progress-fill" style="width:{{ latest.soil_health if latest else 0 }}%"></div></div>
+        </div>
+        <div class="card stat reveal" style="--d:.1s">
+            <div class="stat-icon">&#127807;</div>
+            <div class="stat-label">Current Crop</div>
+            <div class="stat-value small">{{ latest.previous_crop if latest else "Not set" }}</div>
+            <p class="stat-note">Last entered previous crop</p>
+        </div>
+        <div class="card stat reveal" style="--d:.2s">
+            <div class="stat-icon">&#127795;</div>
+            <div class="stat-label">Recommended Crop</div>
+            <div class="stat-value small">{{ latest.recommended_crop if latest else "Not set" }}</div>
+            <p class="stat-note">Latest recommendation</p>
+        </div>
+        <div class="card stat reveal" style="--d:.3s">
+            <div class="stat-icon">&#11088;</div>
+            <div class="stat-label">Rotation Score</div>
+            <div class="stat-value"><span class="count" data-target="{{ latest.rotation_score if latest else 0 }}">{{ latest.rotation_score if latest else "--" }}</span><small>/100</small></div>
+            <div class="progress"><div class="progress-fill gold" style="width:{{ latest.rotation_score if latest else 0 }}%"></div></div>
+        </div>
+        <div class="card stat reveal" style="--d:.4s">
+            <div class="stat-icon">&#9851;</div>
+            <div class="stat-label">Sustainability Score</div>
+            <div class="stat-value"><span class="count" data-target="{{ latest.sustainability if latest else 0 }}">{{ latest.sustainability if latest else "--" }}</span><small>/100</small></div>
+            <div class="progress"><div class="progress-fill green" style="width:{{ latest.sustainability if latest else 0 }}%"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+    <div class="container">
+        <div class="section-head reveal">
+            <h2>Everything a Smart Farmer Needs</h2>
+            <p class="muted">Three intelligent engines working together for one decision</p>
+        </div>
+        <div class="cards-grid three">
+            <div class="card feature reveal" style="--d:.0s">
+                <div class="feature-icon green">&#128202;</div>
+                <h3>Soil Analysis</h3>
+                <p>Converts N-P-K, pH and fertiliser data into a clear Soil Health Score with an
+                   automatic nitrogen-management suggestion.</p>
+                <a class="feature-link" href="{{ url_for('recommend') }}#soil-info">Try it &rarr;</a>
+            </div>
+            <div class="card feature reveal" style="--d:.1s">
+                <div class="feature-icon gold">&#8635;</div>
+                <h3>Smart Crop Rotation</h3>
+                <p>Crop-family logic, disease-break rules and nitrogen fixation guide the next
+                   crop after whatever you grew this season.</p>
+                <a class="feature-link" href="{{ url_for('recommend') }}#rotation-info">Try it &rarr;</a>
+            </div>
+            <div class="card feature reveal" style="--d:.2s">
+                <div class="feature-icon green-dark">&#127795;</div>
+                <h3>Sustainability</h3>
+                <p>Water, fertiliser, diversity and soil-health factors combine into one
+                   easy-to-read Sustainability Score for the recommendation.</p>
+                <a class="feature-link" href="{{ url_for('recommend') }}">Try it &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section container">
+    <div class="section-head reveal">
+        <h2>How It Works</h2>
+        <p class="muted">From your farm data to a fully explained crop plan</p>
+    </div>
+    <div class="steps">
+        <div class="step reveal" style="--d:.0s">
+            <div class="step-num">1</div>
+            <div class="step-icon">&#128203;</div>
+            <h3>Enter Farm Data</h3>
+            <p>Soil pH, N-P-K, rainfall, season, previous crop, water and more.</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step reveal" style="--d:.15s">
+            <div class="step-num">2</div>
+            <div class="step-icon">&#129504;</div>
+            <h3>ML Predicts</h3>
+            <p>The trained Random Forest / Gradient Boosting model scores every crop.</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step reveal" style="--d:.3s">
+            <div class="step-num">3</div>
+            <div class="step-icon">&#8644;</div>
+            <h3>Rules Refine</h3>
+            <p>Rotation rules rank choices by family, water, disease break and season.</p>
+        </div>
+        <div class="step-line"></div>
+        <div class="step reveal" style="--d:.45s">
+            <div class="step-num">4</div>
+            <div class="step-icon">&#127881;</div>
+            <h3>Explained Result</h3>
+            <p>Top crop + 3 alternatives with "Why this crop?" reasons and scores.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CROP FAMILIES ================= -->
+<section class="families">
+    <div class="container">
+        <div class="section-head reveal">
+            <h2>Supported Crop Families</h2>
+            <p class="muted">17 crops across 5 agronomic families - so rotation makes sense</p>
+        </div>
+        <div class="family-list reveal">
+            <div class="family-group">
+                <div class="family-name"><span class="fam-dot" style="--c:#F9A825"></span> Cereals</div>
+                <div class="family-chips">
+                    {% for c in ['Rice','Maize','Wheat','Sorghum'] %}<span class="chip">{{ c }}</span>{% endfor %}
+                </div>
+            </div>
+            <div class="family-group">
+                <div class="family-name"><span class="fam-dot" style="--c:#2E7D32"></span> Pulses</div>
+                <div class="family-chips">
+                    {% for c in ['Black Gram','Green Gram','Chickpea','Cowpea'] %}<span class="chip">{{ c }}</span>{% endfor %}
+                </div>
+            </div>
+            <div class="family-group">
+                <div class="family-name"><span class="fam-dot" style="--c:#66BB6A"></span> Oilseeds</div>
+                <div class="family-chips">
+                    {% for c in ['Groundnut','Sesame','Sunflower'] %}<span class="chip">{{ c }}</span>{% endfor %}
+                </div>
+            </div>
+            <div class="family-group">
+                <div class="family-name"><span class="fam-dot" style="--c:#EF6C00"></span> Vegetables</div>
+                <div class="family-chips">
+                    {% for c in ['Tomato','Brinjal','Chilli','Onion'] %}<span class="chip">{{ c }}</span>{% endfor %}
+                </div>
+            </div>
+            <div class="family-group">
+                <div class="family-name"><span class="fam-dot" style="--c:#7B1FA2"></span> Commercial</div>
+                <div class="family-chips">
+                    {% for c in ['Cotton','Sugarcane'] %}<span class="chip">{{ c }}</span>{% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta reveal">
+    <div class="cta-inner">
+        <h2>Ready to Plan Your Next Season?</h2>
+        <p>Get an explained, sustainable crop recommendation in seconds.</p>
+        <div class="cta-actions">
+            <a class="btn btn-gold btn-lg" href="{{ url_for('recommend') }}">&#10004; Generate Recommendation</a>
+            <a class="btn btn-glass btn-lg" href="{{ url_for('history') }}">&#128197; View History</a>
+        </div>
+    </div>
+</section>
+
+<section class="section container center reveal">
+    <p class="muted">
+        {{ history_count }} recommendation(s) generated on your device. Smart Crop Rotation delivers
+        explainable, decision-support advice for sustainable crop planning.
+    </p>
+</section>
+
+{% endblock %}

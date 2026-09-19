@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.venv/
+
+# Database files (contain user account data + password hashes)
+database/*.db
+database/*.sqlite
+*.db
+*.sqlite
+
+# Trained model artifacts (regenerate with train_model.py)
+models/*.pkl
+models/*.joblib
+
+# Credentials / secrets — never commit
+*.env
+.env
+secrets.json
+config.local.json
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

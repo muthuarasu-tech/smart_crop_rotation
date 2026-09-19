@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% block title %}Recommendation Result{% endblock %}
+{% block content %}
+
+<section class="page-head">
+    <h1>&#127795; Recommendation Result</h1>
+    <p>Generated for <strong>{{ result.inputs.previous_crop }}</strong> targeting the
+       <strong>{{ result.inputs.target_season }}</strong> season.</p>
+</section>
+
+{% if not result.ml_available %}
+<div class="alert alert-warning">
+    &#9888; The ML model was not found, so this result uses the <strong>rule-based rotation engine only</strong>.
+    Run <code>python train_model.py</code> to enable ML predictions.
+</div>
+{% endif %}
+
+{% set top = result.payload.top %}
+{% set prev = result.inputs.previous_crop if result.inputs %}
+{% set top_crop = result.payload.top.crop if top else (result.top_crop or '') %}
+
+<section class="crop-compare card">
+    <div class="compare-sep-label">SEASON TRANSITION</div>
+    <div class="compare-row">
+        <div class="compare-box compare-prev">
+            <span class="compare-tag tag-prev">&#9664; PREVIOUS CROP</span>
+            <h3 class="compare-crop">{{ prev or '&mdash;' }}</h3>
+            <p class="compare-meta">{{ result.prev_family or '&mdash;' }} family</p>
+            <p class="compare-note">Planted last season</p>
+        </div>
+        <div class="compare-arrow">&#10230;</div>
+        <div class="compare-box compare-next">
+            <span class="compare-tag tag-next">&#10003; RECOMMENDED NEXT</span>
+            <h3 class="compare-crop">{{ top_crop }}</h3>
+            <p class="compare-meta">{{ top.family if top else '' }} family &bull; {{ top.duration if top else '' }}</p>
+            <p class="compare-note">Best fit for the coming season</p>
+        </div>
+    </div>
+    {% if top and result.prev_family and top.family %}
+    <div class="compare-verdict">
+        {% if top.family != result.prev_family %}
+        <span class="pill pill-good">&#10003; Different family &mdash; good for disease &amp; soil break</span>
+        {% else %}
+        <span class="pill pill-warn">&#9888; Same family as previous crop &mdash; disease carryover risk</span>
+        {% endif %}
+    </div>
+    {% endif %}
+</section>
+
+<!-- Top Recommendation -->
+{% if top %}
+<section class="top-recommend card">
+    <div class="top-badge">
+        <span class="badge-chip">TOP RECOMMENDATION</span><br>
+        <h2 class="top-crop">{{ top.crop }}</h2>
+        <p class="top-family">{{ top.family }} &bull; {{ top.duration }}</p>
+    </div>
+    <div class="top-metrics">
+        <div class="metric">
+            <div class="circular" style="--val: {{ top.suitability }};">
+                <div class="circular-inner"><strong>{{ top.suitability }}%</strong><small>Suitability</small></div>
+            </div>
+        </div>
+        <div class="metric">
+            <div class="stat-label">Rotation Score</div>
+            <div class="stat-value">{{ result.payload.rotation_total }}/100</div>
+            <span class="pill pill-{{ result.payload.rotation_label|lower }}">{{ result.payload.rotation_label }}</span>
+        </div>
+        <div class="metric">
+            <div class="stat-label">Water Requirement</div>
+            <div class="stat-value small">{{ top.water_req }}</div>
+        </div>
+        <div class="metric">
+            <div class="stat-label">ML Probability</div>
+            <div class="stat-value small">{{ top.ml_prob }}%</div>
+        </div>
+    </div>
+</section>
+
+<p class="reason-text">{{ result.payload.reason }}</p>
+
+<!-- Alternative crops -->
+<h2 class="section-title">Alternative Crops</h2>
+<div class="alt-grid">
+    {% for alt in result.payload.alternatives %}
+    <div class="card alt-card">
+        <div class="alt-head">
+            <h3>{{ loop.index }}. {{ alt.crop }}</h3>
+            <span class="pill pill-good">{{ alt.suitability }}%</span>
+        </div>
+        <div class="alt-rows">
+            <span>Rotation Score: <strong>{{ alt.rotation_score }}/100</strong></span>
+            <span>Soil Compatibility: <strong>{{ alt.breakdown['soil_compatibility'].score }}/25</strong></span>
+            <span>Water Requirement: <strong>{{ alt.water_req }}</strong></span>
+            <span>Season Suitability:
+                {% if alt.season_ok %}<strong class="ok">&#10003; Suitable</strong>{% else %}<strong class="warn">&#9888; Marginal</strong>{% endif %}
+            </span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="alert alert-danger">No candidate crops could be scored for these inputs.</div>
+{% endif %}
+
+<!-- Score panels -->
+<div class="cards-grid three">
+    <div class="card score-card">
+        <h3>Soil Health</h3>
+        <div class="score-big">{{ result.soil_health.score }}<small>/100</small></div>
+        <span class="pill pill-{{ result.soil_health.status|lower|replace(' ', '-') }}">{{ result.soil_health.status }}</span>
+        <canvas id="soilHealthChart" height="180"></canvas>
+        <ul class="tiny-list">
+            {% for s in result.soil_health.suggestions %}<li>{{ s }}</li>{% endfor %}
+        </ul>
+    </div>
+
+    <div class="card score-card">
+        <h3>Rotation Score</h3>
+        <div class="score-big">{{ result.payload.rotation_total }}<small>/100</small></div>
+        <span class="pill pill-{{ result.payload.rotation_label|lower }}">{{ result.payload.rotation_label }}</span>
+        <div class="breakdown">
+            {% for b in result.payload.rotation_breakdown %}
+            <div class="break-row">
+                <span>{{ b.label }}</span>
+                <div class="progress"><div class="progress-fill gold" style="width: {{ (b.score / b.max * 100) | int }}%"></div></div>
+                <strong>{{ b.score }}/{{ b.max }}</strong>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="card score-card">
+        <h3>Sustainability</h3>
+        <div class="score-big">{{ result.sustainability.score }}<small>/100</small></div>
+        <span class="pill pill-good">{{ result.sustainability.label }}</span>
+        <canvas id="sustainChart" height="180"></canvas>
+    </div>
+</div>
+
+<div class="layout-two">
+    <div class="col">
+        <div class="card">
+            <h2 class="card-title">Why {{ top.crop if top else 'this crop' }}?</h2>
+            <ul class="check-list">
+                {% for check in result.payload.why_checks %}<li>&#10003; {{ check }}</li>{% endfor %}
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">&#127807; Nitrogen Management Suggestion</h2>
+            <p class="nitrogen-note">{{ result.payload.nitrogen }}</p>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <h2 class="card-title">Crop Rotation Timeline</h2>
+            <div class="timeline">
+                <div class="tl-node">
+                    <div class="tl-arrow">&#9660;</div>
+                    <div class="tl-card current">
+                        <span class="tl-season">Current / Previous</span>
+                        <strong>{{ result.inputs.previous_crop }}</strong>
+                        <span class="tl-family">{{ result.payload.top.family if top else '' }} family</span>
+                    </div>
+                </div>
+                {% for p in result.plan %}
+                <div class="tl-node">
+                    <div class="tl-arrow">&#9660;</div>
+                    <div class="tl-card {{ 'highlight' if loop.first else '' }}">
+                        <span class="tl-season">Season {{ p.season_no }} &bull; {{ p.season }}</span>
+                        <strong>{{ p.crop }}</strong>
+                        <span class="tl-family">{{ p.family }} &bull; suitability {{ p.score }}%</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card action-bar">
+    {% if result.history_id %}
+    <a class="btn btn-primary" href="{{ url_for('report', history_id=result.history_id) }}" target="_blank">
+        &#128196; Generate / Print Report</a>
+    {% endif %}
+    <a class="btn btn-outline" href="{{ url_for('recommend') }}">&#8635; New Recommendation</a>
+    <a class="btn btn-ghost" href="{{ url_for('history') }}">&#128197; View History</a>
+</div>
+
+<div class="alert alert-warning disclaimer">
+    <strong>Please note:</strong> Recommendations are decision-support suggestions generated from
+    agronomic models. Actual results depend on local soil, weather and management conditions.
+    Validate the recommendation with a certified agricultural expert before planting.
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const soilHealth = {{ result.soil_health.breakdown | tojson }};
+const rotationBreak = {{ result.payload.rotation_breakdown | tojson }};
+const sustainBreak = {{ result.sustainability.breakdown | tojson }};
+const altCrops = {{ result.payload.alternatives | tojson }};
+
+window.addEventListener('DOMContentLoaded', function () {
+    // Soil health doughnut
+    const soilLabels = soilHealth.map(b => b.label + ' (' + b.note + ')');
+    new Chart(document.getElementById('soilHealthChart'), {
+        type: 'doughnut',
+        data: {
+            labels: [],
+            datasets: [{
+                data: soilHealth.map(b => b.score),
+                backgroundColor: ['#2E7D32', '#66BB6A', '#A5D6A7', '#F9A825', '#EF6C00'],
+                borderWidth: 0,
+            }]
+        },
+        options: { plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } } }
+    });
+
+    // Sustainability radar
+    new Chart(document.getElementById('sustainChart'), {
+        type: 'radar',
+        data: {
+            labels: sustainBreak.map(b => b.label + ' (' + b.score + '/' + b.max + ')'),
+            datasets: [{
+                label: 'Sustainability factors',
+                data: sustainBreak.map(b => Math.round(b.score / b.max * 100)),
+                backgroundColor: 'rgba(249,168,37,0.25)',
+                borderColor: '#F9A825',
+                pointBackgroundColor: '#2E7D32',
+            }]
+        },
+        options: { scales: { r: { max: 100, ticks: { stepSize: 20 } } },
+                   plugins: { legend: { display: false } } }
+    });
+});
+</script>
+{% endblock %}

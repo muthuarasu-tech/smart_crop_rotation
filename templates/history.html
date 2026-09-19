@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Recommendation History{% endblock %}
+{% block content %}
+
+<section class="page-head row-between">
+    <div>
+        <h1>&#128197; Recommendation History</h1>
+        <p>All saved recommendations stored in the SQLite database.</p>
+    </div>
+    <form method="post" action="{{ url_for('clear_history') }}"
+          onsubmit="return confirm('Clear ALL history? This cannot be undone.');">
+        <button class="btn btn-danger">Clear History</button>
+    </form>
+</section>
+
+{% if rows %}
+<div class="card table-card">
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Previous Crop</th>
+                    <th>Recommended Crop</th>
+                    <th>Soil / pH</th>
+                    <th>N-P-K</th>
+                    <th>Rain</th>
+                    <th>Temp</th>
+                    <th>Rotation</th>
+                    <th>Soil</th>
+                    <th>Sustain.</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in rows %}
+                <tr>
+                    <td class="mono">
+                        <a href="{{ url_for('report', history_id=r.id) }}">{{ r.created_at }}</a>
+                    </td>
+                    <td>{{ r.previous_crop }}</td>
+                    <td><strong>{{ r.recommended_crop }}</strong></td>
+                    <td>{{ r.soil_type }} / {{ r.ph }}</td>
+                    <td>{{ r.n }}-{{ r.p }}-{{ r.k }}</td>
+                    <td>{{ r.rainfall }} mm</td>
+                    <td>{{ r.temperature }}&deg;C</td>
+                    <td>{{ r.rotation_score }}</td>
+                    <td>{{ r.soil_health }}</td>
+                    <td>{{ r.sustainability }}</td>
+                    <td>
+                        <div class="row-actions">
+                            <a class="btn btn-ghost btn-sm" href="{{ url_for('report', history_id=r.id) }}">Report</a>
+                            <form method="post" action="{{ url_for('delete_history', history_id=r.id) }}"
+                                  onsubmit="return confirm('Delete this record?');">
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% else %}
+<div class="card empty-state">
+    <p>No recommendations yet. Run the <a href="{{ url_for('recommend') }}">recommendation form</a> first.</p>
+</div>
+{% endif %}
+
+{% endblock %}

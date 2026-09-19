@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Model Performance{% endblock %}
+{% block content %}
+
+<section class="page-head">
+    <h1>&#129504; Model Performance</h1>
+    <p>Comparison of the four Machine Learning classifiers used by the recommendation engine.</p>
+</section>
+
+{% if cm_json and cm_json.get('notes') %}
+<div class="alert alert-warning">
+    &#9888; Model performance metrics are computed on the bundled training dataset; accuracy on
+    real farm data may differ.
+</div>
+{% endif %}
+
+<div class="cards-grid two">
+    <div class="card">
+        <h3 class="card-title">Metrics Table</h3>
+        {% if models %}
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Accuracy</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1 Score</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for m in models %}
+                    <tr class="{{ 'row-best' if m.is_best else '' }}">
+                        <td><strong>{{ m.model_name }}</strong></td>
+                        <td>{{ '%.2f'|format(m.accuracy * 100) }}%</td>
+                        <td>{{ '%.2f'|format(m.precision * 100) }}%</td>
+                        <td>{{ '%.2f'|format(m.recall * 100) }}%</td>
+                        <td>{{ '%.2f'|format(m.f1 * 100) }}%</td>
+                        <td>
+                            {% if m.is_best %}<span class="pill pill-good">&#9733; Selected</span>
+                            {% else %}<span class="pill">Comparison</span>{% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="muted">No metrics found. Run <code>python train_model.py</code>.</p>
+        {% endif %}
+    </div>
+
+    <div class="card chart-card">
+        <h3 class="card-title">Model Comparison Chart</h3>
+        <canvas id="modelChart" height="240"></canvas>
+    </div>
+</div>
+
+<div class="card">
+    <h3 class="card-title">Confusion Matrix (selected model)</h3>
+    {% if cm_matrix and cm_labels %}
+    <p class="muted">Rows = actual crop, Columns = predicted crop (counts).</p>
+    <div class="table-wrap">
+        {% set maxv = cm_matrix | map('max') | list | max %}
+        <table class="confusion">
+            <tbody>
+                <tr>
+                    <td></td>
+                    {% for l in cm_labels %}<th class="cm-col">{{ l }}</th>{% endfor %}
+                </tr>
+                {% for row in cm_matrix %}
+                <tr>
+                    <th class="cm-row">{{ cm_labels[loop.index0] }}</th>
+                    {% for cell in row %}
+                    {% set mx = maxv if (maxv is defined and maxv > 0) else 1 %}
+                    <td class="cm-cell" style="background: rgba(46,125,50, {{ (cell / mx) if mx else 0 }});">
+                        {{ cell }}
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <p class="muted">Confusion matrix is only available after training.</p>
+    {% endif %}
+</div>
+
+<div class="card">
+    <h3 class="card-title">What the metrics mean</h3>
+    <ul class="tiny-list">
+        <li><strong>Accuracy</strong> - fraction of test crops correctly predicted.</li>
+        <li><strong>Precision</strong> - of the crops the model predicted, how many were correct per class (macro average).</li>
+        <li><strong>Recall</strong> - of the actual crops, how many the model caught per class (macro average).</li>
+        <li><strong>F1 Score</strong> - harmonic mean of precision and recall; balanced, useful for multi-class tasks.</li>
+        <li><strong>Best model</strong> - chosen by highest F1 and saved as <code>models/crop_model.pkl</code>.</li>
+    </ul>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const models = {{ models | tojson }};
+window.addEventListener('DOMContentLoaded', function () {
+    if (models.length) {
+        new Chart(document.getElementById('modelChart'), {
+            type: 'bar',
+            data: {
+                labels: models.map(m => m.model_name),
+                datasets: [
+                    { label: 'Accuracy %', data: models.map(m => +(m.accuracy * 100).toFixed(1)), backgroundColor: models.map(m => m.is_best ? '#F9A825' : '#A5D6A7') },
+                    { label: 'Precision %', data: models.map(m => +(m.precision * 100).toFixed(1)), backgroundColor: models.map(m => m.is_best ? '#EF6C00' : '#66BB6A') },
+                    { label: 'Recall %', data: models.map(m => +(m.recall * 100).toFixed(1)), backgroundColor: models.map(m => m.is_best ? '#7B1FA2' : '#81C784') },
+                    { label: 'F1 %', data: models.map(m => +(m.f1 * 100).toFixed(1)), backgroundColor: models.map(m => m.is_best ? '#2E7D32' : '#B2DFDB') },
+                ]
+            },
+            options: { scales: { y: { beginAtZero: true, max: 100 } } }
+        });
+    }
+});
+</script>
+{% endblock %}

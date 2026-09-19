@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Recommendation Report{% endblock %}
+{% block content %}
+
+<button class="btn btn-primary" onclick="window.print()">&#128424; Print / Save as PDF</button>
+<a class="btn btn-outline" href="{{ url_for('history') }}">&larr; Back to History</a>
+
+<div class="card report-card">
+    <div class="report-head">
+        <h1>SMART CROP ROTATION</h1>
+        <h2>AI-Based Intelligent Crop Rotation Recommendation System</h2>
+        <p class="report-meta">Report Date: {{ history.created_at }}</p>
+    </div>
+
+    <h3>1. Input Parameters</h3>
+    <table>
+        <tbody>
+            <tr><th>Previous Crop</th><td>{{ history.previous_crop }}</td>
+                <th>Season</th><td>{{ history.season }}</td></tr>
+            <tr><th>Soil Type</th><td>{{ history.soil_type }}</td>
+                <th>Soil pH</th><td>{{ history.ph }}</td></tr>
+            <tr><th>Nitrogen (N)</th><td>{{ history.n }}</td>
+                <th>Phosphorus (P)</th><td>{{ history.p }}</td></tr>
+            <tr><th>Potassium (K)</th><td>{{ history.k }}</td>
+                <th>Rainfall</th><td>{{ history.rainfall }} mm</td></tr>
+            <tr><th>Temperature</th><td>{{ history.temperature }} &deg;C</td>
+                <th>Humidity</th><td>{{ history.humidity }}%</td></tr>
+            {% set inp = result.inputs %}
+            <tr><th>Water Availability</th><td>{{ inp.water_availability }}</td>
+                <th>Irrigation</th><td>{{ inp.irrigation }}</td></tr>
+            <tr><th>Region</th><td>{{ inp.region }}</td>
+                <th>Previous Yield</th><td>{{ inp.previous_yield }}</td></tr>
+            <tr><th>Disease Level</th><td>{{ inp.disease_level }}</td>
+                <th>Fertilizer Usage</th><td>{{ inp.fertilizer_usage }}</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2. Recommended Crop</h3>
+    <div class="report-recommend">
+        <span class="report-big">{{ result.top_crop }}</span>
+        <span class="pill pill-good">{{ result.payload.top.suitability }}% suitability</span>
+    </div>
+    <p>{{ result.payload.reason }}</p>
+
+    <h3>3. Alternative Crops</h3>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Crop</th><th>Suitability</th><th>Rotation Score</th>
+                <th>Water Req.</th><th>Season</th></tr>
+        </thead>
+        <tbody>
+            {% for alt in result.payload.alternatives %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td><strong>{{ alt.crop }}</strong></td>
+                <td>{{ alt.suitability }}%</td>
+                <td>{{ alt.rotation_score }}/100</td>
+                <td>{{ alt.water_req }}</td>
+                <td>{% if alt.season_ok %}&#10003; Suitable{% else %}&#9888; Marginal{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>4. Scores</h3>
+    <table>
+        <thead><tr><th>Score</th><th>Value</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td>Soil Health Score</td><td>{{ result.soil_health.score }}/100</td>
+                <td>{{ result.soil_health.status }}</td></tr>
+            <tr><td>Rotation Score</td><td>{{ result.payload.rotation_total }}/100</td>
+                <td>{{ result.payload.rotation_label }}</td></tr>
+            <tr><td>Sustainability Score</td><td>{{ result.sustainability.score }}/100</td>
+                <td>{{ result.sustainability.label }}</td></tr>
+        </tbody>
+    </table>
+
+    <h3>5. Reasons ("Why this crop?")</h3>
+    <ul class="check-list">
+        {% for check in result.payload.why_checks %}<li>&#10003; {{ check }}</li>{% endfor %}
+    </ul>
+
+    <h3>6. Nitrogen Management Suggestion</h3>
+    <p>{{ result.payload.nitrogen }}</p>
+
+    <h3>7. Crop Rotation Plan (Timeline)</h3>
+    <table>
+        <thead><tr><th>Stage</th><th>Crop</th><th>Family</th><th>Suitability</th></tr></thead>
+        <tbody>
+            <tr><td>Previous season</td><td>{{ result.inputs.previous_crop }}</td>
+                <td>Current</td><td>--</td></tr>
+            {% for p in result.plan %}
+            <tr><td>Season {{ p.season_no }} ({{ p.season }})</td><td><strong>{{ p.crop }}</strong></td>
+                <td>{{ p.family }}</td><td>{{ p.score }}%</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>8. Warnings &amp; Disclaimer</h3>
+    <ul class="tiny-list">
+        <li>Models are trained on the structured dataset bundled with the platform.</li>
+        <li>Scores are decision-support estimates, not official agronomic standards.</li>
+        <li>Validate the recommendation against local soil-test reports and expert agronomist advice.</li>
+    </ul>
+</div>
+
+{% endblock %}

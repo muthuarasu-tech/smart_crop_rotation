@@ -1,0 +1,701 @@
+N,P,K,temperature,humidity,ph,rainfall,soil_type,previous_crop,season,water_availability,irrigation,region,previous_yield,disease_level,fertilizer_usage,recommended_crop
+55,47,42,29.2,67,6.7,1406,Red,Cowpea,Kharif,High,Rainfed,West India,2.8,Medium,Medium,Rice
+61,64,37,31.2,50,6.9,339,Sandy,Brinjal,Kharif,Medium,Rainfed,West India,3.1,Medium,Medium,Sorghum
+54,56,75,29.1,51,6.6,830,Clay,Groundnut,Kharif,Medium,Canal,Central India,2.0,Medium,Low,Maize
+27,56,37,23.3,31,7.5,505,Sandy,Brinjal,Rabi,Low,Drip,North India,3.5,Medium,Low,Chickpea
+67,50,63,24.6,53,6.3,649,Sandy,Cowpea,Rabi,Low,Rainfed,South India,3.6,Low,Low,Brinjal
+65,76,92,26.2,42,7.2,654,Clay,Maize,Zaid,High,Drip,Central India,5.0,Medium,Medium,Chilli
+18,40,34,21.1,52,6.3,555,Loamy,Groundnut,Rabi,Medium,Drip,East India,1.9,High,High,Chickpea
+78,38,90,29.2,61,7.3,663,Black,Groundnut,Rabi,High,Canal,North-East India,5.2,Medium,Low,Maize
+61,47,73,15.7,56,7.0,584,Alluvial,Chickpea,Rabi,Low,Canal,Central India,7.1,Low,Low,Wheat
+23,62,35,32.4,68,7.2,666,Sandy,Onion,Kharif,Medium,Rainfed,Central India,1.0,Medium,Medium,Cowpea
+26,52,29,23.2,32,6.6,315,Alluvial,Sorghum,Rabi,Low,Drip,North-East India,3.3,High,Low,Chickpea
+26,65,40,19.7,45,6.9,358,Black,Tomato,Rabi,High,Rainfed,Central India,4.4,High,Medium,Chickpea
+23,58,37,30.8,67,6.9,363,Alluvial,Cotton,Zaid,Medium,Drip,North-East India,2.5,Low,Medium,Green Gram
+59,59,88,17.7,42,6.6,564,Red,Green Gram,Rabi,High,Canal,South India,2.1,High,Low,Wheat
+86,57,61,31.5,54,7.0,680,Clay,Sunflower,Kharif,Medium,Sprinkler,North-East India,6.4,Medium,Low,Cotton
+36,39,41,30.3,41,5.7,626,Red,Chickpea,Rabi,High,Rainfed,North India,1.1,Medium,Medium,Sorghum
+56,47,37,32.9,51,5.8,324,Sandy,Sesame,Rabi,Low,Canal,South India,3.3,Medium,Low,Sorghum
+53,47,38,31.8,69,6.2,419,Sandy,Sugarcane,Kharif,Low,Rainfed,South India,5.4,Low,Medium,Sesame
+54,52,68,31.4,54,6.3,584,Alluvial,Black Gram,Kharif,Medium,Rainfed,North-East India,4.6,Medium,High,Sorghum
+38,58,23,23.3,35,6.2,341,Loamy,Cotton,Rabi,Low,Drip,North-East India,2.1,Medium,Medium,Chickpea
+42,52,27,21.6,31,7.1,548,Loamy,Cotton,Rabi,High,Rainfed,South India,1.0,Medium,High,Chickpea
+54,52,59,26.4,54,6.5,759,Red,Rice,Rabi,Medium,Rainfed,West India,2.4,Low,High,Brinjal
+35,44,32,20.9,41,7.1,584,Sandy,Onion,Rabi,Medium,Rainfed,North India,3.2,High,Low,Chickpea
+42,90,71,28.4,47,6.6,689,Sandy,Wheat,Kharif,Medium,Drip,West India,4.2,Medium,Medium,Chilli
+20,50,28,32.3,46,5.8,626,Red,Rice,Kharif,High,Rainfed,South India,3.1,Medium,Low,Cowpea
+58,81,59,23.9,50,6.2,401,Alluvial,Wheat,Rabi,Medium,Sprinkler,East India,4.3,Medium,Low,Sunflower
+22,50,41,29.5,64,6.8,441,Clay,Maize,Kharif,High,Canal,South India,3.4,Medium,Low,Green Gram
+87,57,65,30.5,73,6.5,701,Red,Maize,Kharif,High,Rainfed,Central India,1.9,High,Medium,Cotton
+30,55,32,29.6,70,6.4,699,Clay,Sunflower,Kharif,High,Canal,East India,4.6,Low,High,Green Gram
+57,55,53,32.0,67,6.3,899,Loamy,Brinjal,Kharif,Medium,Sprinkler,Central India,7.2,Low,Low,Cotton
+42,42,41,28.6,70,6.9,567,Clay,Cotton,Rabi,Medium,Drip,South India,7.1,Low,Low,Brinjal
+41,68,61,31.2,61,6.1,543,Sandy,Black Gram,Kharif,High,Canal,Central India,2.7,Medium,Low,Sorghum
+61,36,42,30.7,54,6.5,365,Black,Chickpea,Rabi,Low,Canal,North India,4.6,Medium,High,Sorghum
+22,56,35,32.9,55,7.3,407,Loamy,Wheat,Kharif,Medium,Drip,North India,3.2,Medium,High,Cowpea
+81,59,76,30.4,52,6.9,547,Sandy,Chilli,Kharif,Low,Rainfed,North India,5.5,Medium,Low,Cotton
+31,69,26,30.4,66,6.5,687,Alluvial,Sugarcane,Kharif,High,Drip,Central India,4.7,High,High,Groundnut
+48,71,36,26.1,46,7.4,441,Sandy,Chilli,Rabi,Medium,Rainfed,Central India,1.2,High,Low,Sunflower
+58,71,85,24.9,65,7.5,437,Loamy,Sesame,Rabi,Medium,Rainfed,North-East India,3.0,Low,Medium,Chilli
+51,44,62,22.5,55,6.8,574,Loamy,Sorghum,Rabi,Medium,Rainfed,North-East India,2.9,Low,High,Onion
+53,58,60,26.1,73,7.1,890,Clay,Tomato,Rabi,Medium,Drip,West India,1.8,High,Low,Maize
+22,88,33,30.8,45,6.9,536,Alluvial,Brinjal,Kharif,High,Drip,South India,2.1,High,Low,Groundnut
+31,66,26,28.2,52,6.3,549,Black,Chilli,Kharif,Medium,Rainfed,North-East India,7.8,Low,High,Green Gram
+51,63,42,23.9,45,7.4,404,Clay,Rice,Zaid,Medium,Rainfed,West India,3.7,Low,Low,Sunflower
+36,76,55,25.5,51,6.2,698,Sandy,Chickpea,Kharif,High,Sprinkler,East India,3.9,Medium,Low,Chilli
+47,50,60,23.8,75,6.8,632,Sandy,Sunflower,Zaid,High,Drip,South India,1.0,High,Low,Brinjal
+34,86,21,27.5,72,5.7,663,Clay,Sorghum,Kharif,High,Canal,Central India,3.7,Medium,High,Groundnut
+40,63,50,28.0,66,6.9,561,Sandy,Chickpea,Rabi,Low,Drip,Central India,4.8,Medium,Medium,Brinjal
+28,38,33,28.5,54,6.6,636,Alluvial,Chilli,Kharif,Low,Rainfed,West India,2.9,High,Low,Cowpea
+88,59,40,31.6,68,5.7,1439,Loamy,Tomato,Kharif,High,Rainfed,Central India,4.4,Medium,High,Rice
+54,56,75,17.9,42,7.3,534,Sandy,Black Gram,Rabi,Low,Canal,West India,5.5,Medium,Low,Wheat
+41,47,37,23.2,51,7.4,334,Red,Cotton,Rabi,Medium,Rainfed,Central India,3.4,Medium,Low,Chickpea
+88,64,54,20.2,56,6.9,512,Loamy,Tomato,Rabi,Medium,Sprinkler,West India,1.9,Low,High,Wheat
+83,60,45,31.9,88,5.6,1102,Loamy,Sugarcane,Kharif,Low,Rainfed,North India,0.9,Medium,Medium,Rice
+38,45,32,28.2,60,7.2,487,Red,Sunflower,Kharif,Medium,Rainfed,West India,3.9,Medium,High,Cowpea
+38,49,33,24.1,55,8.3,465,Sandy,Tomato,Rabi,High,Drip,North-East India,1.6,High,Medium,Chickpea
+29,39,22,28.9,55,5.9,483,Alluvial,Wheat,Kharif,Medium,Rainfed,North India,1.6,Medium,Medium,Cowpea
+47,59,55,24.1,56,6.8,488,Black,Chilli,Zaid,High,Drip,North India,2.8,High,High,Sunflower
+37,56,27,31.6,52,7.2,683,Sandy,Sesame,Kharif,Low,Rainfed,Central India,2.7,Low,High,Green Gram
+40,60,78,23.1,53,6.6,496,Black,Sesame,Rabi,Low,Canal,East India,5.4,High,Low,Onion
+22,40,34,28.3,65,7.4,584,Clay,Onion,Kharif,High,Canal,South India,2.9,Medium,Low,Black Gram
+83,64,68,32.4,63,6.3,1050,Clay,Black Gram,Rabi,High,Canal,Central India,6.2,Low,Medium,Sugarcane
+41,69,85,25.4,53,6.9,670,Red,Black Gram,Kharif,High,Canal,Central India,3.2,High,Low,Chilli
+64,62,62,25.8,72,6.1,752,Sandy,Green Gram,Zaid,Medium,Canal,East India,2.0,Medium,Low,Brinjal
+32,39,18,31.8,65,7.4,394,Red,Sunflower,Zaid,Medium,Drip,North-East India,2.8,Medium,High,Green Gram
+68,44,72,17.7,53,6.8,576,Black,Tomato,Rabi,Medium,Canal,North-East India,8.0,Low,Medium,Wheat
+63,57,40,27.1,79,6.6,506,Clay,Rice,Rabi,Medium,Rainfed,North-East India,1.0,Medium,High,Brinjal
+28,90,30,28.9,55,6.6,481,Black,Tomato,Zaid,Low,Drip,West India,1.1,High,Low,Groundnut
+66,61,76,31.8,64,6.2,1420,Black,Chickpea,Rabi,High,Rainfed,East India,1.6,Medium,Low,Sugarcane
+21,40,29,32.5,46,6.7,516,Clay,Rice,Kharif,High,Drip,East India,5.8,Medium,High,Green Gram
+51,71,66,24.6,57,7.2,363,Loamy,Black Gram,Rabi,Low,Drip,West India,3.1,Medium,Low,Sunflower
+59,66,60,24.3,53,5.7,526,Loamy,Wheat,Rabi,Low,Sprinkler,North-East India,3.6,Medium,High,Brinjal
+26,57,39,30.8,55,6.5,427,Sandy,Rice,Zaid,Medium,Drip,East India,3.9,Low,Medium,Cowpea
+26,40,41,29.7,65,6.7,645,Sandy,Groundnut,Kharif,High,Canal,Central India,1.7,Medium,High,Black Gram
+63,43,43,23.9,68,6.7,539,Red,Cowpea,Zaid,Low,Rainfed,East India,3.7,Medium,Medium,Brinjal
+32,42,20,28.5,62,6.4,455,Red,Groundnut,Zaid,Medium,Canal,Central India,6.6,Low,Medium,Green Gram
+33,64,28,32.7,65,7.1,490,Clay,Sunflower,Zaid,Medium,Drip,North India,2.2,Medium,Medium,Black Gram
+58,66,39,24.1,51,7.0,507,Loamy,Brinjal,Rabi,Medium,Drip,West India,3.4,Medium,High,Sunflower
+51,51,64,28.2,69,6.9,799,Sandy,Maize,Rabi,Medium,Drip,West India,4.7,Medium,Low,Brinjal
+70,43,74,29.8,74,6.2,754,Sandy,Black Gram,Rabi,Medium,Drip,North-East India,4.0,Low,Low,Maize
+70,43,64,19.9,40,6.7,546,Sandy,Cowpea,Rabi,Medium,Canal,Central India,1.0,Medium,Medium,Wheat
+58,50,68,29.8,88,6.8,1008,Red,Sesame,Kharif,Medium,Canal,South India,2.0,Medium,Medium,Rice
+46,35,58,23.8,54,6.9,738,Sandy,Cotton,Rabi,High,Canal,North-East India,2.9,High,Medium,Brinjal
+46,56,77,21.8,56,6.1,478,Alluvial,Rice,Rabi,High,Sprinkler,East India,3.8,Low,High,Onion
+82,59,79,32.0,53,7.2,571,Red,Onion,Kharif,Low,Drip,North-East India,2.5,High,Low,Cotton
+81,45,40,27.9,82,7.0,1469,Sandy,Chilli,Kharif,High,Canal,Central India,7.5,Low,High,Rice
+43,56,52,25.7,42,6.4,475,Clay,Cowpea,Kharif,Medium,Rainfed,South India,2.2,High,High,Chilli
+46,62,74,24.9,61,6.3,407,Red,Cowpea,Zaid,Low,Canal,West India,6.6,Low,Medium,Tomato
+34,60,33,27.8,60,5.8,618,Alluvial,Black Gram,Kharif,High,Canal,West India,4.7,Low,Medium,Groundnut
+57,46,90,30.5,76,7.4,1365,Sandy,Black Gram,Kharif,High,Canal,East India,5.1,Low,High,Sugarcane
+63,36,61,26.5,54,7.4,889,Sandy,Tomato,Rabi,Medium,Sprinkler,North India,3.4,Medium,High,Maize
+70,65,58,27.6,68,6.1,1243,Black,Chickpea,Rabi,High,Rainfed,North-East India,0.4,High,Low,Sugarcane
+37,64,66,26.4,48,6.4,452,Sandy,Wheat,Rabi,High,Sprinkler,Central India,5.1,High,Low,Sunflower
+48,59,87,22.2,51,7.3,371,Loamy,Black Gram,Rabi,Medium,Rainfed,North-East India,1.4,High,Medium,Onion
+57,75,55,26.2,50,6.3,517,Loamy,Sunflower,Rabi,Medium,Sprinkler,Central India,4.9,Low,Medium,Chilli
+58,50,73,31.3,63,6.8,975,Loamy,Brinjal,Rabi,Medium,Canal,South India,1.6,Low,Low,Sugarcane
+34,48,37,27.1,46,7.3,669,Clay,Rice,Kharif,Low,Rainfed,South India,3.4,Low,Low,Green Gram
+22,47,22,30.2,65,7.5,429,Alluvial,Sunflower,Kharif,Medium,Rainfed,Central India,3.9,High,High,Cowpea
+25,35,21,32.6,66,6.9,526,Black,Wheat,Kharif,Low,Canal,South India,6.8,Low,High,Green Gram
+42,87,49,28.7,51,7.3,514,Black,Tomato,Rabi,High,Rainfed,North-East India,3.6,Low,Low,Sunflower
+21,74,23,30.4,62,7.1,662,Clay,Cowpea,Zaid,Medium,Rainfed,Central India,4.1,Medium,Low,Groundnut
+62,87,79,25.0,47,7.2,578,Black,Black Gram,Kharif,Medium,Canal,East India,1.8,Medium,Low,Chilli
+56,56,70,28.3,83,6.5,1145,Sandy,Green Gram,Rabi,High,Rainfed,North-East India,7.3,Low,High,Sugarcane
+38,49,60,28.7,53,6.5,642,Black,Chickpea,Rabi,Medium,Rainfed,West India,5.4,Medium,Low,Brinjal
+50,58,54,29.0,45,5.8,692,Clay,Chickpea,Rabi,Low,Rainfed,Central India,1.0,High,Low,Sorghum
+86,57,82,15.7,52,6.1,695,Alluvial,Brinjal,Rabi,Medium,Sprinkler,North-East India,1.7,Low,Low,Wheat
+69,58,69,30.0,60,5.9,654,Sandy,Black Gram,Kharif,High,Canal,West India,3.3,Low,Medium,Maize
+37,68,59,22.6,53,6.7,456,Clay,Chickpea,Rabi,Medium,Canal,Central India,2.9,Low,High,Tomato
+40,39,65,24.8,76,6.7,548,Clay,Black Gram,Zaid,Medium,Rainfed,North India,1.7,Medium,High,Brinjal
+45,60,51,24.2,59,5.7,570,Black,Cotton,Rabi,Medium,Sprinkler,North India,7.5,Low,High,Brinjal
+86,44,80,16.1,56,6.1,697,Alluvial,Brinjal,Rabi,Medium,Drip,Central India,1.4,High,Medium,Wheat
+33,41,36,21.7,36,6.5,458,Clay,Maize,Rabi,Medium,Rainfed,Central India,6.2,Low,High,Chickpea
+26,48,32,27.0,73,6.2,749,Alluvial,Sugarcane,Kharif,Medium,Canal,Central India,0.9,Medium,Medium,Black Gram
+55,72,61,23.3,51,7.1,518,Sandy,Rice,Rabi,Medium,Sprinkler,West India,6.5,Low,Medium,Chilli
+83,42,61,16.0,61,6.0,415,Loamy,Tomato,Rabi,Low,Drip,South India,4.3,Medium,Medium,Wheat
+80,66,75,28.6,71,7.0,1375,Red,Tomato,Rabi,High,Canal,North India,1.9,Low,High,Sugarcane
+37,89,38,28.0,61,6.6,454,Loamy,Cowpea,Zaid,Medium,Drip,South India,1.8,Low,Medium,Groundnut
+63,56,55,27.3,81,7.3,1472,Alluvial,Chickpea,Kharif,High,Canal,Central India,2.9,Low,High,Sugarcane
+44,44,36,25.1,64,6.5,599,Loamy,Black Gram,Zaid,Low,Rainfed,South India,1.5,Medium,Medium,Brinjal
+63,83,77,30.3,73,6.7,587,Alluvial,Black Gram,Kharif,High,Canal,North India,7.2,Low,Low,Cotton
+48,43,59,27.6,68,6.7,375,Loamy,Wheat,Kharif,Medium,Rainfed,North India,2.4,High,Medium,Sesame
+66,79,67,23.2,60,6.9,700,Loamy,Sugarcane,Rabi,High,Rainfed,Central India,7.8,Low,Medium,Tomato
+59,78,65,23.4,52,6.1,520,Clay,Sugarcane,Rabi,High,Sprinkler,East India,1.9,High,Medium,Sunflower
+80,51,68,27.0,77,6.0,1004,Clay,Cowpea,Rabi,Low,Rainfed,East India,6.5,Low,High,Sugarcane
+57,86,76,25.0,42,6.3,479,Sandy,Cowpea,Kharif,Medium,Canal,North India,5.1,Low,Medium,Chilli
+26,66,20,29.8,54,7.2,575,Clay,Rice,Zaid,Medium,Rainfed,South India,1.9,High,High,Groundnut
+36,63,67,26.9,52,6.7,434,Sandy,Sugarcane,Kharif,Low,Canal,Central India,1.4,Low,High,Chilli
+74,59,60,28.6,66,7.3,1154,Loamy,Wheat,Kharif,Medium,Canal,North India,3.2,Medium,Low,Sugarcane
+36,56,21,32.5,66,6.8,699,Red,Cowpea,Kharif,High,Rainfed,East India,3.8,Low,Low,Groundnut
+41,78,83,25.7,41,7.3,533,Clay,Sugarcane,Kharif,High,Canal,Central India,1.1,High,Low,Chilli
+42,64,30,32.7,51,6.6,569,Black,Brinjal,Kharif,Medium,Drip,South India,2.2,Low,Medium,Cowpea
+79,58,79,26.7,61,7.2,565,Sandy,Tomato,Rabi,Low,Canal,North India,5.3,Low,Low,Maize
+27,42,37,21.8,49,8.5,442,Alluvial,Wheat,Rabi,High,Drip,Central India,5.1,Medium,High,Chickpea
+39,68,34,28.9,53,6.9,487,Black,Chilli,Kharif,Low,Rainfed,South India,1.2,High,Medium,Cowpea
+53,87,56,25.5,62,6.4,479,Black,Sugarcane,Rabi,High,Rainfed,East India,7.0,Low,High,Sunflower
+31,38,25,32.4,63,6.6,516,Clay,Tomato,Kharif,High,Drip,North India,6.5,Medium,Medium,Cowpea
+67,79,41,23.6,54,7.2,565,Loamy,Black Gram,Rabi,High,Drip,East India,1.2,High,Low,Sunflower
+47,45,63,32.4,47,6.3,616,Sandy,Chilli,Rabi,Low,Rainfed,North-East India,2.8,Medium,Medium,Sorghum
+62,55,92,17.3,52,7.3,462,Black,Brinjal,Rabi,Low,Canal,South India,7.8,Low,Medium,Wheat
+63,73,81,27.8,65,6.3,550,Sandy,Cowpea,Rabi,Medium,Canal,East India,1.8,High,Low,Chilli
+53,74,72,27.3,58,6.4,412,Clay,Black Gram,Rabi,Low,Rainfed,Central India,2.4,High,Medium,Chilli
+59,45,59,31.8,85,6.6,1185,Loamy,Green Gram,Kharif,Medium,Rainfed,North-East India,7.2,Low,High,Sugarcane
+48,91,85,26.8,60,7.0,655,Clay,Groundnut,Rabi,High,Canal,West India,2.9,Low,High,Chilli
+36,77,70,26.8,48,6.4,597,Red,Sorghum,Kharif,Medium,Canal,North India,8.0,Low,Low,Chilli
+27,51,25,21.6,41,6.8,435,Clay,Brinjal,Rabi,Low,Drip,East India,2.3,Low,Medium,Chickpea
+59,57,47,27.0,62,7.8,515,Clay,Chilli,Kharif,Low,Canal,West India,6.7,Medium,Medium,Sorghum
+39,68,75,25.8,47,7.2,444,Clay,Chickpea,Rabi,Low,Drip,East India,4.8,Medium,Medium,Chilli
+55,49,53,28.3,62,5.8,361,Red,Green Gram,Kharif,Medium,Rainfed,North-East India,5.4,Medium,Medium,Sorghum
+24,68,18,32.9,70,5.5,640,Black,Chilli,Kharif,High,Rainfed,Central India,2.2,High,Medium,Groundnut
+51,67,83,22.3,41,7.1,522,Red,Sugarcane,Rabi,Medium,Canal,West India,3.1,High,Medium,Onion
+27,53,24,31.5,59,6.3,635,Sandy,Sorghum,Kharif,Medium,Drip,Central India,3.2,High,Medium,Cowpea
+30,67,24,28.6,65,6.3,597,Clay,Cotton,Kharif,Medium,Rainfed,North-East India,6.0,Low,Medium,Black Gram
+60,47,83,32.9,83,6.8,1052,Loamy,Black Gram,Kharif,High,Rainfed,North India,3.3,Low,Low,Sugarcane
+73,37,39,30.5,84,5.6,1054,Black,Cowpea,Kharif,Medium,Rainfed,South India,1.0,Medium,High,Rice
+31,43,18,28.7,57,5.8,512,Red,Sunflower,Zaid,Low,Rainfed,North India,6.3,Low,Low,Cowpea
+62,46,59,29.4,70,7.0,525,Red,Cowpea,Zaid,High,Drip,West India,4.0,Medium,Medium,Sesame
+72,39,47,29.7,76,6.3,1050,Loamy,Sunflower,Kharif,Low,Rainfed,South India,7.2,Low,Medium,Rice
+72,66,63,25.4,65,6.7,595,Clay,Sesame,Kharif,Medium,Sprinkler,South India,4.3,Low,Medium,Maize
+26,76,38,29.1,72,6.0,516,Alluvial,Chilli,Zaid,Medium,Drip,West India,1.4,Medium,Medium,Groundnut
+56,50,53,32.2,81,7.2,908,Clay,Cowpea,Kharif,Low,Canal,South India,2.9,High,Low,Sugarcane
+19,41,36,32.7,51,6.7,635,Clay,Sugarcane,Kharif,Medium,Canal,North-East India,7.9,Low,Low,Green Gram
+60,60,61,27.9,47,6.7,379,Sandy,Black Gram,Kharif,Low,Drip,North India,2.5,Medium,Low,Sesame
+20,52,35,27.4,74,6.4,668,Black,Cotton,Zaid,Low,Rainfed,North-East India,2.7,High,High,Green Gram
+53,85,70,25.9,48,6.1,562,Clay,Sorghum,Rabi,Low,Sprinkler,West India,0.9,Medium,Low,Chilli
+66,59,39,31.9,48,6.1,438,Sandy,Brinjal,Rabi,High,Canal,South India,2.5,High,Medium,Sorghum
+37,66,27,30.4,66,5.8,487,Clay,Chilli,Kharif,High,Drip,North India,2.8,Low,High,Cowpea
+71,55,72,30.1,75,6.5,1421,Loamy,Green Gram,Kharif,High,Canal,East India,1.9,High,Low,Sugarcane
+36,49,33,28.1,61,6.2,449,Alluvial,Maize,Kharif,Medium,Rainfed,North-East India,3.3,High,Low,Cowpea
+41,40,57,28.6,51,7.4,669,Red,Cowpea,Rabi,Low,Rainfed,Central India,2.0,Low,High,Sorghum
+49,66,39,27.7,76,6.9,600,Sandy,Green Gram,Rabi,Low,Drip,North-East India,5.4,Medium,Medium,Brinjal
+49,74,56,27.7,68,6.9,515,Red,Chilli,Rabi,High,Sprinkler,West India,4.9,Medium,Medium,Sunflower
+65,63,63,30.9,68,6.2,488,Alluvial,Brinjal,Kharif,High,Rainfed,East India,7.3,Low,Low,Sesame
+77,57,71,17.2,49,7.0,645,Alluvial,Sunflower,Rabi,High,Drip,West India,2.2,High,High,Wheat
+65,61,61,28.6,48,6.7,448,Black,Sugarcane,Kharif,Low,Rainfed,North-East India,2.8,High,Medium,Sorghum
+40,50,30,27.1,68,5.8,659,Loamy,Sunflower,Kharif,Medium,Rainfed,North India,2.4,Medium,Medium,Cowpea
+44,38,56,27.9,42,6.8,503,Loamy,Green Gram,Kharif,High,Rainfed,North-East India,7.5,Low,Low,Sorghum
+62,65,37,32.8,52,5.7,547,Black,Rice,Kharif,Low,Rainfed,North India,3.5,High,Low,Sesame
+58,47,61,27.4,64,6.3,408,Alluvial,Rice,Kharif,Medium,Drip,West India,2.2,Medium,Low,Sesame
+49,65,43,26.0,46,6.7,370,Red,Green Gram,Rabi,Low,Sprinkler,North-East India,2.2,Medium,Medium,Sunflower
+64,61,42,32.4,68,6.3,405,Black,Tomato,Kharif,High,Rainfed,West India,6.2,Low,Low,Sorghum
+90,57,54,28.7,65,6.3,1361,Black,Rice,Kharif,High,Canal,West India,1.9,Medium,Medium,Sugarcane
+90,58,78,28.9,59,7.0,706,Alluvial,Chickpea,Rabi,High,Sprinkler,West India,1.7,Low,High,Maize
+36,62,27,31.8,54,6.4,592,Alluvial,Cowpea,Zaid,Medium,Canal,Central India,3.0,High,Medium,Groundnut
+21,36,19,22.3,46,7.2,510,Clay,Brinjal,Rabi,Medium,Rainfed,North India,1.3,Medium,High,Chickpea
+35,82,60,28.9,50,6.2,443,Sandy,Wheat,Rabi,High,Drip,West India,3.8,High,High,Sunflower
+37,60,40,31.6,67,6.1,650,Red,Sugarcane,Zaid,Low,Rainfed,North-East India,0.9,High,Low,Cowpea
+68,84,62,26.6,49,6.7,434,Clay,Sorghum,Zaid,Low,Drip,North-East India,7.1,Low,Low,Chilli
+74,41,72,27.6,79,6.7,980,Alluvial,Maize,Rabi,High,Rainfed,North India,1.4,High,Medium,Sugarcane
+77,41,89,15.8,53,7.0,523,Loamy,Sunflower,Rabi,Medium,Sprinkler,North India,1.3,Low,Medium,Wheat
+33,46,22,32.3,48,7.3,426,Black,Sesame,Zaid,Medium,Drip,North-East India,4.0,Medium,Low,Green Gram
+18,57,35,31.5,67,7.4,491,Alluvial,Wheat,Kharif,Low,Drip,South India,4.5,Medium,High,Cowpea
+40,57,21,28.7,73,7.4,746,Red,Sugarcane,Kharif,High,Rainfed,East India,4.9,Low,Low,Black Gram
+41,58,40,31.8,55,7.4,627,Clay,Tomato,Zaid,Medium,Drip,North-East India,2.6,Low,Medium,Black Gram
+54,49,85,19.4,46,6.6,422,Loamy,Chickpea,Rabi,Medium,Sprinkler,North India,7.2,Low,Medium,Onion
+27,47,21,31.5,59,7.4,575,Red,Wheat,Zaid,High,Drip,North India,1.7,Low,Medium,Black Gram
+29,39,34,30.4,63,6.6,459,Sandy,Sunflower,Zaid,High,Rainfed,South India,3.1,High,Medium,Green Gram
+19,40,35,29.0,71,6.3,631,Black,Maize,Kharif,Low,Rainfed,Central India,5.6,Medium,Low,Green Gram
+55,47,67,26.0,79,6.1,648,Loamy,Sesame,Rabi,Medium,Sprinkler,North India,1.1,Medium,Medium,Brinjal
+40,41,39,32.9,52,7.2,606,Alluvial,Brinjal,Kharif,Medium,Rainfed,North-East India,7.5,Low,Low,Green Gram
+65,50,40,32.5,57,7.2,642,Sandy,Cotton,Kharif,Medium,Drip,South India,3.9,Low,Medium,Sesame
+44,62,39,25.6,63,7.1,433,Alluvial,Cotton,Rabi,Low,Sprinkler,North India,3.2,Low,Medium,Sunflower
+53,89,57,27.2,44,6.7,410,Loamy,Cotton,Rabi,Medium,Drip,South India,1.4,Medium,Low,Chilli
+72,38,66,28.4,55,7.0,812,Alluvial,Cowpea,Kharif,Medium,Canal,East India,4.0,High,Low,Maize
+60,58,62,26.4,51,5.9,733,Loamy,Cotton,Zaid,High,Sprinkler,Central India,5.0,High,Medium,Brinjal
+24,44,32,31.9,63,7.1,556,Clay,Groundnut,Zaid,Low,Canal,East India,7.2,Low,Medium,Green Gram
+25,67,19,31.7,74,6.3,446,Red,Groundnut,Zaid,High,Canal,East India,2.0,Medium,High,Green Gram
+66,56,63,20.9,58,6.1,512,Alluvial,Sorghum,Rabi,Medium,Drip,West India,3.7,Low,Medium,Onion
+40,36,38,29.8,68,6.8,397,Alluvial,Tomato,Rabi,Low,Canal,West India,4.5,Medium,Medium,Sorghum
+46,52,39,32.5,60,7.8,334,Loamy,Tomato,Rabi,Low,Rainfed,West India,6.6,Low,Low,Sorghum
+32,61,41,31.2,61,7.0,614,Alluvial,Sunflower,Zaid,Medium,Canal,North India,2.8,High,High,Green Gram
+30,65,42,27.5,48,6.4,622,Alluvial,Cotton,Zaid,High,Rainfed,West India,5.6,Low,Medium,Groundnut
+20,47,36,20.0,43,8.0,402,Alluvial,Cotton,Rabi,Medium,Rainfed,South India,5.4,Low,High,Chickpea
+64,63,81,28.0,56,7.4,527,Black,Cotton,Rabi,Medium,Canal,Central India,6.0,Medium,Medium,Chilli
+30,62,39,32.6,67,6.7,549,Loamy,Sugarcane,Zaid,Low,Drip,North-East India,4.2,High,Low,Cowpea
+47,63,56,31.7,52,5.6,382,Loamy,Chilli,Rabi,Low,Rainfed,South India,6.5,Low,High,Sorghum
+67,62,56,28.1,50,6.6,673,Sandy,Maize,Rabi,High,Sprinkler,South India,2.7,Medium,Medium,Chilli
+60,87,62,24.1,64,6.3,556,Black,Sorghum,Zaid,Medium,Rainfed,South India,2.7,High,Medium,Sunflower
+57,58,45,28.0,65,6.1,562,Red,Chickpea,Rabi,High,Sprinkler,South India,3.4,High,Medium,Sunflower
+45,87,57,23.4,43,6.6,619,Red,Black Gram,Rabi,High,Canal,North-East India,5.5,Low,Low,Chilli
+19,52,25,29.4,71,6.4,426,Alluvial,Rice,Kharif,High,Rainfed,North India,4.1,Medium,Medium,Green Gram
+19,83,23,31.7,73,7.3,518,Loamy,Wheat,Zaid,High,Drip,South India,7.0,Low,Medium,Groundnut
+60,43,59,32.5,61,7.4,586,Sandy,Chilli,Rabi,High,Rainfed,South India,2.4,High,High,Sorghum
+63,59,82,31.7,58,6.8,875,Black,Sesame,Kharif,High,Drip,North India,1.0,High,Medium,Cotton
+63,37,63,31.1,45,7.1,376,Clay,Chickpea,Kharif,Medium,Rainfed,West India,5.8,Medium,High,Sesame
+35,56,32,28.3,59,6.7,746,Sandy,Brinjal,Kharif,High,Canal,West India,4.4,Low,Low,Groundnut
+22,61,37,29.7,62,5.9,632,Sandy,Onion,Kharif,Low,Rainfed,South India,4.4,Medium,Medium,Cowpea
+80,38,59,27.9,81,6.8,1484,Sandy,Green Gram,Rabi,High,Rainfed,North-East India,4.7,Medium,Medium,Sugarcane
+41,77,25,32.3,48,5.6,645,Clay,Cowpea,Kharif,Medium,Drip,South India,2.8,Low,High,Groundnut
+40,57,81,26.7,62,6.7,465,Red,Black Gram,Kharif,Medium,Canal,North India,7.7,Low,Medium,Chilli
+41,90,55,24.1,50,7.3,426,Alluvial,Cotton,Rabi,Low,Drip,West India,2.4,Medium,Low,Chilli
+66,86,43,23.2,65,6.6,356,Black,Rice,Zaid,Medium,Rainfed,North-East India,2.7,Low,Low,Sunflower
+31,59,35,27.2,68,6.1,481,Clay,Sorghum,Kharif,Medium,Drip,South India,2.0,Medium,Medium,Black Gram
+65,58,55,32.4,59,7.4,584,Clay,Cowpea,Zaid,Low,Rainfed,North-East India,2.4,High,Medium,Sesame
+33,78,28,29.0,51,6.1,652,Loamy,Black Gram,Zaid,High,Canal,East India,4.6,Low,Medium,Groundnut
+63,61,85,24.6,62,7.2,432,Black,Cowpea,Zaid,Medium,Sprinkler,West India,3.4,Low,High,Chilli
+37,89,29,28.3,69,6.1,484,Clay,Sorghum,Zaid,Low,Drip,North-East India,6.6,Low,Low,Groundnut
+64,66,56,32.3,65,5.9,501,Black,Sugarcane,Kharif,High,Drip,North-East India,4.2,Low,Low,Sesame
+41,67,57,29.5,56,6.4,424,Sandy,Cowpea,Zaid,Medium,Drip,West India,5.0,Medium,Medium,Sesame
+53,46,68,23.0,46,6.8,375,Red,Rice,Rabi,Medium,Drip,Central India,4.6,Medium,Low,Onion
+66,52,52,27.0,40,6.9,537,Red,Cotton,Rabi,High,Rainfed,North India,4.7,Low,High,Sorghum
+65,54,46,32.4,56,6.6,353,Sandy,Wheat,Kharif,Medium,Rainfed,North-East India,6.6,Medium,Medium,Sesame
+68,54,56,27.1,59,6.6,560,Sandy,Cowpea,Zaid,High,Drip,East India,3.6,Medium,Medium,Sunflower
+35,63,24,32.7,74,6.1,722,Loamy,Sugarcane,Kharif,Medium,Canal,North-East India,3.0,Medium,High,Black Gram
+67,80,67,24.5,43,7.2,417,Alluvial,Black Gram,Zaid,Low,Canal,East India,3.1,High,Low,Chilli
+49,56,77,24.8,59,6.9,699,Red,Sunflower,Zaid,High,Sprinkler,West India,2.5,High,Medium,Tomato
+88,67,75,28.8,87,6.6,951,Red,Onion,Rabi,Low,Canal,West India,4.3,Medium,Medium,Sugarcane
+45,53,59,23.1,50,6.2,520,Red,Sugarcane,Rabi,High,Rainfed,North India,1.9,High,High,Onion
+82,42,45,27.7,73,5.7,1233,Loamy,Brinjal,Kharif,Low,Canal,North-East India,6.5,Low,Low,Rice
+36,63,23,29.2,64,6.9,651,Red,Onion,Kharif,High,Canal,North-East India,4.0,Medium,High,Black Gram
+27,45,28,30.7,62,6.1,575,Clay,Cotton,Zaid,Low,Drip,South India,3.2,Low,Low,Cowpea
+84,45,80,29.7,63,6.7,1411,Red,Black Gram,Rabi,Medium,Canal,North India,1.1,Medium,Medium,Sugarcane
+56,65,38,29.9,53,5.9,639,Black,Cotton,Kharif,High,Drip,North India,1.6,High,Low,Sesame
+56,49,42,31.3,66,6.7,634,Black,Wheat,Kharif,High,Drip,East India,7.5,Low,Medium,Sesame
+56,38,51,28.1,60,6.1,593,Sandy,Green Gram,Kharif,Medium,Rainfed,North-East India,6.2,Low,Low,Sesame
+20,48,29,23.6,40,6.7,347,Clay,Chilli,Rabi,Low,Rainfed,North-East India,3.4,Low,High,Chickpea
+29,65,40,29.3,49,7.3,581,Loamy,Chickpea,Kharif,High,Rainfed,Central India,3.5,Low,Low,Groundnut
+48,52,65,28.3,56,6.6,488,Sandy,Groundnut,Rabi,Low,Canal,South India,2.1,Medium,Medium,Chilli
+63,65,72,28.6,90,6.4,1168,Clay,Brinjal,Kharif,Low,Canal,South India,2.0,Low,Low,Sugarcane
+53,61,86,31.0,61,6.0,1445,Clay,Brinjal,Kharif,Medium,Rainfed,South India,6.7,Low,Medium,Sugarcane
+52,40,50,29.1,70,6.8,635,Loamy,Brinjal,Kharif,Low,Drip,North-East India,1.5,High,High,Sesame
+64,65,58,22.4,53,6.1,376,Alluvial,Sugarcane,Rabi,Medium,Drip,North-East India,3.8,High,High,Onion
+29,41,23,30.1,51,7.0,366,Clay,Sesame,Kharif,Medium,Rainfed,Central India,0.7,High,High,Green Gram
+44,85,88,23.9,42,6.1,594,Sandy,Cowpea,Rabi,Low,Rainfed,West India,2.5,Medium,Medium,Tomato
+49,51,49,31.0,40,5.7,559,Clay,Cowpea,Kharif,Medium,Canal,North-East India,5.4,Low,High,Sorghum
+21,82,24,28.6,65,5.7,685,Loamy,Sugarcane,Kharif,High,Rainfed,West India,1.5,Low,Low,Groundnut
+81,39,57,28.5,84,7.0,1444,Clay,Black Gram,Kharif,High,Canal,West India,3.9,Medium,High,Sugarcane
+38,63,40,29.4,67,5.9,640,Alluvial,Black Gram,Kharif,Medium,Rainfed,North-East India,1.9,High,Medium,Sesame
+23,63,37,29.0,45,6.6,641,Loamy,Rice,Kharif,High,Rainfed,North-East India,2.5,Medium,Low,Groundnut
+28,40,21,27.3,71,6.8,410,Black,Cotton,Kharif,High,Drip,North India,3.9,Low,Low,Green Gram
+43,85,73,26.6,56,6.3,637,Clay,Sesame,Zaid,High,Rainfed,North-East India,5.5,Low,Medium,Tomato
+50,48,65,27.3,51,6.4,380,Red,Sugarcane,Kharif,High,Canal,Central India,1.2,Low,High,Sorghum
+19,39,33,28.3,48,7.5,553,Black,Onion,Kharif,High,Drip,South India,2.9,Medium,Medium,Cowpea
+40,48,55,28.9,54,6.0,385,Loamy,Sorghum,Kharif,Medium,Rainfed,Central India,3.2,Medium,High,Sesame
+37,87,61,25.1,47,6.7,593,Black,Cotton,Kharif,High,Canal,Central India,5.5,Low,Medium,Chilli
+19,51,21,30.4,67,7.0,452,Sandy,Sesame,Kharif,Low,Rainfed,Central India,5.3,Medium,Medium,Green Gram
+27,50,20,32.7,58,5.6,446,Red,Rice,Kharif,Low,Drip,North-East India,4.7,Low,Low,Cowpea
+59,68,57,21.4,61,6.2,501,Clay,Green Gram,Rabi,High,Sprinkler,North India,3.6,Medium,High,Tomato
+21,58,41,19.8,53,7.8,506,Sandy,Chilli,Rabi,Low,Rainfed,Central India,2.7,High,Medium,Chickpea
+39,42,30,30.1,54,6.1,692,Sandy,Brinjal,Kharif,High,Rainfed,West India,1.2,Low,Low,Black Gram
+91,53,55,31.7,82,6.1,1173,Clay,Cotton,Kharif,Medium,Rainfed,North-East India,4.3,Low,Low,Rice
+42,64,45,25.7,63,5.9,685,Alluvial,Cotton,Rabi,Medium,Sprinkler,North India,2.8,Medium,High,Brinjal
+62,44,51,26.3,70,6.5,760,Red,Maize,Rabi,High,Rainfed,South India,2.3,Medium,Medium,Brinjal
+21,43,35,18.5,44,6.5,392,Red,Chilli,Rabi,High,Rainfed,North-East India,4.1,High,Medium,Chickpea
+87,68,57,29.3,62,6.5,1493,Red,Chickpea,Kharif,Medium,Rainfed,North-East India,1.8,Medium,High,Sugarcane
+74,52,75,17.9,65,7.2,664,Red,Black Gram,Rabi,High,Drip,North-East India,4.5,High,Low,Wheat
+27,68,28,28.0,67,5.9,682,Black,Onion,Kharif,Low,Rainfed,West India,7.9,Low,High,Cowpea
+76,65,55,29.1,79,7.0,1049,Clay,Black Gram,Rabi,Medium,Rainfed,North-East India,1.3,Medium,Medium,Sugarcane
+58,64,73,31.8,62,6.9,1020,Loamy,Black Gram,Rabi,Low,Canal,South India,1.3,High,Medium,Sugarcane
+53,81,84,32.7,65,7.2,632,Alluvial,Cowpea,Kharif,Low,Rainfed,East India,6.5,Low,High,Cotton
+35,56,67,18.6,54,7.3,507,Clay,Rice,Rabi,High,Rainfed,South India,2.3,Medium,Low,Onion
+36,53,72,24.0,45,7.1,678,Sandy,Rice,Zaid,High,Drip,Central India,2.5,Low,Medium,Chilli
+59,65,66,25.5,62,7.3,610,Loamy,Green Gram,Rabi,High,Rainfed,North India,4.3,High,Low,Chilli
+80,47,85,31.6,83,6.7,955,Loamy,Black Gram,Rabi,Low,Rainfed,North-East India,4.7,Medium,Medium,Sugarcane
+62,70,84,27.2,69,6.8,681,Sandy,Sunflower,Kharif,Low,Drip,South India,1.9,Low,Low,Cotton
+60,52,55,27.1,72,6.2,1209,Sandy,Cotton,Kharif,Medium,Canal,North-East India,4.4,High,Low,Rice
+90,76,54,28.2,60,7.3,709,Alluvial,Rice,Kharif,Low,Drip,North-East India,3.5,High,Medium,Cotton
+39,41,24,30.6,58,6.8,425,Sandy,Brinjal,Kharif,Medium,Drip,West India,1.2,High,High,Cowpea
+59,43,75,23.2,50,6.5,390,Alluvial,Rice,Rabi,Low,Canal,Central India,6.7,Low,Medium,Onion
+30,47,31,31.7,55,5.7,641,Loamy,Cotton,Zaid,High,Rainfed,North India,3.4,Medium,Low,Cowpea
+58,40,62,27.7,57,5.7,497,Alluvial,Cotton,Kharif,Medium,Canal,Central India,1.2,Medium,Medium,Sorghum
+35,73,18,31.1,59,5.8,667,Clay,Sugarcane,Kharif,High,Canal,West India,4.7,Medium,High,Groundnut
+67,65,62,27.3,53,7.9,646,Clay,Brinjal,Kharif,High,Rainfed,Central India,6.0,Low,Medium,Sorghum
+20,63,25,28.2,54,5.6,451,Red,Sorghum,Kharif,Medium,Drip,Central India,4.3,Low,Medium,Cowpea
+27,47,29,28.2,74,7.3,518,Sandy,Onion,Kharif,Medium,Canal,South India,4.5,Low,Low,Green Gram
+59,88,59,21.7,64,6.4,609,Loamy,Chickpea,Zaid,High,Drip,North-East India,6.0,Medium,Medium,Tomato
+67,44,68,32.3,48,5.5,520,Black,Maize,Zaid,High,Drip,West India,3.1,High,High,Sesame
+62,60,56,20.1,45,6.2,386,Sandy,Rice,Rabi,Low,Rainfed,North India,2.1,High,High,Onion
+54,46,61,19.8,42,7.1,477,Sandy,Tomato,Rabi,Medium,Sprinkler,West India,5.5,High,High,Wheat
+40,45,37,29.1,52,6.0,558,Black,Sugarcane,Rabi,Low,Rainfed,South India,5.4,Low,Low,Sorghum
+51,59,59,28.9,53,5.9,404,Clay,Chickpea,Zaid,Medium,Rainfed,East India,7.9,Low,High,Sesame
+86,51,65,29.0,70,7.0,1430,Red,Sorghum,Rabi,Medium,Canal,South India,7.4,Low,Medium,Sugarcane
+35,73,28,30.7,60,6.9,695,Loamy,Chilli,Zaid,High,Canal,North-East India,2.4,High,Low,Groundnut
+36,67,43,31.4,64,6.0,372,Clay,Chickpea,Kharif,Medium,Canal,East India,7.4,Low,Medium,Sorghum
+60,41,46,31.6,61,5.6,1036,Alluvial,Cowpea,Kharif,Medium,Rainfed,East India,6.2,Low,Medium,Rice
+37,49,22,27.7,60,6.2,662,Red,Cotton,Kharif,High,Drip,Central India,5.1,Low,Medium,Black Gram
+62,54,47,29.6,47,8.0,610,Loamy,Onion,Rabi,High,Rainfed,North India,5.3,Low,High,Sorghum
+31,55,23,32.1,67,7.4,497,Red,Brinjal,Zaid,Low,Drip,North-East India,2.3,Medium,Medium,Green Gram
+58,65,53,24.6,75,6.1,705,Clay,Onion,Rabi,Medium,Rainfed,East India,2.9,Medium,Low,Maize
+64,41,75,17.7,43,6.1,409,Black,Onion,Rabi,Medium,Canal,West India,1.3,Low,Medium,Wheat
+84,42,41,31.0,67,6.9,1388,Sandy,Sesame,Kharif,High,Rainfed,West India,4.8,Medium,Medium,Rice
+68,54,57,26.4,62,6.9,691,Alluvial,Cowpea,Rabi,Medium,Canal,East India,2.9,High,Medium,Maize
+19,57,41,28.7,55,6.2,497,Sandy,Sorghum,Zaid,High,Rainfed,West India,5.7,Medium,Medium,Green Gram
+88,73,69,27.8,54,7.3,891,Red,Sunflower,Kharif,High,Canal,West India,2.6,High,Low,Cotton
+68,53,69,25.4,52,6.9,783,Black,Sugarcane,Rabi,High,Sprinkler,East India,6.8,Low,Medium,Maize
+34,90,21,32.0,59,6.7,682,Loamy,Chickpea,Kharif,High,Canal,South India,0.6,High,Medium,Groundnut
+51,54,49,32.0,67,6.8,496,Loamy,Black Gram,Kharif,Medium,Rainfed,West India,3.9,High,High,Sorghum
+64,44,54,31.1,41,7.6,432,Sandy,Cowpea,Kharif,Medium,Canal,South India,1.3,Low,Low,Sorghum
+36,46,37,29.4,57,7.5,598,Alluvial,Sugarcane,Rabi,Low,Rainfed,West India,5.4,Medium,Medium,Sorghum
+85,55,83,18.8,49,7.5,515,Alluvial,Brinjal,Rabi,Medium,Canal,East India,5.0,Low,Medium,Wheat
+44,41,74,18.9,43,6.1,429,Black,Green Gram,Rabi,Low,Sprinkler,North-East India,5.7,Low,Medium,Onion
+27,73,22,27.4,55,5.8,702,Alluvial,Chilli,Zaid,Medium,Drip,Central India,3.7,Low,Medium,Groundnut
+85,63,55,31.8,76,6.0,1375,Alluvial,Rice,Kharif,High,Canal,North-East India,4.4,Low,High,Sugarcane
+55,63,61,27.6,51,5.8,554,Sandy,Sunflower,Rabi,Medium,Sprinkler,North-East India,3.8,High,High,Brinjal
+63,48,47,23.0,68,6.9,645,Red,Green Gram,Rabi,High,Sprinkler,West India,2.5,Low,High,Brinjal
+56,84,72,28.3,63,7.3,614,Sandy,Wheat,Rabi,High,Rainfed,West India,5.0,High,High,Chilli
+23,51,18,29.0,75,6.2,454,Alluvial,Maize,Kharif,Low,Canal,North-East India,6.4,Low,Medium,Black Gram
+49,56,56,21.3,59,6.6,618,Clay,Black Gram,Zaid,High,Sprinkler,South India,4.3,Low,Medium,Tomato
+46,70,59,27.5,49,6.3,369,Loamy,Sorghum,Rabi,Low,Rainfed,West India,2.9,High,Medium,Sunflower
+38,46,33,31.2,60,6.4,503,Black,Chilli,Kharif,Low,Drip,North India,3.3,High,High,Black Gram
+70,39,35,31.7,79,6.6,1248,Loamy,Groundnut,Kharif,Medium,Rainfed,South India,2.7,Medium,Medium,Rice
+57,40,38,27.0,66,6.8,622,Clay,Sugarcane,Zaid,High,Rainfed,North-East India,1.3,Medium,High,Sesame
+50,57,90,24.8,62,7.4,692,Sandy,Cowpea,Zaid,High,Canal,South India,1.3,Medium,Low,Chilli
+34,64,38,29.5,53,5.5,685,Sandy,Maize,Kharif,Medium,Drip,North-East India,7.8,Low,Medium,Cowpea
+43,89,58,24.0,55,6.1,661,Alluvial,Rice,Kharif,High,Sprinkler,East India,4.4,Medium,Low,Chilli
+60,66,60,19.4,44,6.3,493,Sandy,Sugarcane,Rabi,High,Rainfed,East India,2.0,Medium,High,Onion
+83,50,56,33.0,86,6.3,1105,Black,Brinjal,Rabi,Medium,Rainfed,West India,6.3,Low,Low,Sugarcane
+85,60,35,27.7,88,6.0,1498,Red,Groundnut,Kharif,Medium,Rainfed,South India,3.9,Medium,Medium,Rice
+49,44,59,28.2,52,7.0,759,Red,Sugarcane,Rabi,High,Canal,East India,6.0,Low,Medium,Brinjal
+40,38,27,22.3,48,7.5,308,Loamy,Sorghum,Rabi,Low,Rainfed,North-East India,7.9,Low,Medium,Chickpea
+42,80,66,21.2,53,6.8,516,Clay,Green Gram,Zaid,High,Sprinkler,North-East India,6.6,Low,Medium,Tomato
+62,86,65,26.9,61,6.7,502,Alluvial,Sorghum,Kharif,High,Sprinkler,Central India,3.2,High,High,Chilli
+91,57,83,24.1,55,5.9,727,Black,Chilli,Kharif,High,Drip,East India,3.8,Low,Medium,Maize
+27,67,39,27.0,59,7.0,525,Alluvial,Green Gram,Kharif,High,Drip,North India,6.7,Low,Medium,Groundnut
+31,45,20,32.1,59,7.4,698,Black,Sugarcane,Kharif,Low,Rainfed,South India,2.4,Low,Low,Cowpea
+46,67,75,26.9,44,6.4,437,Sandy,Wheat,Rabi,Medium,Drip,West India,0.7,High,Low,Tomato
+20,79,23,28.5,67,7.5,510,Clay,Cotton,Kharif,Medium,Drip,West India,5.8,Low,High,Groundnut
+57,37,54,28.8,81,6.5,1081,Sandy,Green Gram,Kharif,Medium,Canal,West India,4.3,Medium,High,Sugarcane
+58,64,69,26.1,44,6.5,444,Sandy,Cotton,Kharif,Medium,Drip,West India,6.2,Medium,High,Chilli
+51,67,45,25.2,70,5.8,534,Loamy,Chickpea,Rabi,Medium,Sprinkler,West India,5.3,Low,Medium,Brinjal
+59,54,67,27.5,66,6.9,807,Clay,Tomato,Kharif,High,Sprinkler,West India,1.6,High,Medium,Cotton
+54,59,65,22.1,59,6.1,668,Red,Sunflower,Rabi,High,Drip,West India,1.9,High,High,Tomato
+39,59,59,31.9,58,7.1,683,Red,Sunflower,Kharif,Low,Rainfed,West India,2.6,High,High,Sorghum
+45,61,86,26.6,48,6.8,698,Red,Chickpea,Kharif,High,Rainfed,North-East India,4.4,High,Medium,Chilli
+19,64,28,28.3,69,7.0,497,Black,Chilli,Kharif,High,Drip,North India,4.5,Low,Medium,Black Gram
+59,52,50,31.1,65,6.1,630,Red,Cowpea,Kharif,Low,Canal,North India,3.3,Low,Medium,Sorghum
+60,74,51,27.4,46,7.4,391,Black,Sugarcane,Zaid,Low,Rainfed,East India,7.7,Low,High,Sunflower
+86,36,58,32.9,71,7.5,1396,Red,Chickpea,Rabi,High,Rainfed,North India,2.6,High,Low,Sugarcane
+24,78,37,30.4,53,5.6,532,Alluvial,Cowpea,Kharif,Low,Drip,East India,1.1,High,Low,Groundnut
+29,38,27,32.7,62,6.2,475,Alluvial,Chilli,Kharif,High,Drip,Central India,4.5,Medium,Medium,Cowpea
+40,64,27,32.1,73,6.7,707,Loamy,Green Gram,Zaid,Medium,Rainfed,Central India,5.5,Medium,High,Groundnut
+35,37,41,31.8,48,6.8,639,Alluvial,Groundnut,Zaid,Low,Drip,East India,1.5,Medium,High,Cowpea
+58,38,57,28.6,45,7.6,526,Red,Groundnut,Kharif,High,Canal,West India,2.4,High,Medium,Sorghum
+86,57,86,30.4,81,7.5,1036,Red,Black Gram,Kharif,Low,Rainfed,Central India,1.7,Low,High,Sugarcane
+36,89,90,25.9,64,7.3,500,Black,Wheat,Rabi,Low,Sprinkler,North India,5.3,Medium,High,Chilli
+63,36,36,25.9,55,6.2,563,Black,Sugarcane,Rabi,Low,Drip,South India,1.5,Medium,Low,Brinjal
+85,37,92,27.9,74,6.4,822,Loamy,Sunflower,Rabi,High,Rainfed,East India,0.9,Medium,Low,Maize
+34,38,41,33.0,65,5.8,519,Alluvial,Maize,Zaid,Low,Rainfed,North-East India,4.5,Low,Medium,Cowpea
+45,62,43,26.1,66,6.7,417,Sandy,Sugarcane,Zaid,Medium,Drip,Central India,2.6,Low,High,Sunflower
+42,61,36,27.7,65,6.3,597,Clay,Maize,Zaid,High,Drip,East India,1.3,High,High,Black Gram
+60,35,54,29.9,42,7.2,340,Red,Chilli,Rabi,Low,Rainfed,North India,1.7,Low,Medium,Sorghum
+19,73,33,31.9,59,5.5,711,Loamy,Cotton,Kharif,High,Canal,Central India,5.4,Low,Low,Groundnut
+73,37,66,32.7,82,6.7,1362,Red,Cowpea,Kharif,High,Rainfed,West India,7.9,Low,Medium,Sugarcane
+68,56,71,23.9,42,6.0,669,Loamy,Sunflower,Kharif,High,Sprinkler,North India,7.0,Low,Medium,Chilli
+84,44,79,28.5,74,6.6,595,Black,Sesame,Rabi,Medium,Sprinkler,North India,3.3,Medium,Low,Maize
+23,40,21,30.3,64,7.0,522,Black,Sugarcane,Kharif,High,Drip,North-East India,4.2,Low,High,Cowpea
+75,50,53,29.1,78,5.6,1114,Red,Onion,Kharif,Low,Canal,East India,3.2,Low,Low,Rice
+19,47,25,28.9,64,7.0,627,Sandy,Onion,Kharif,Low,Rainfed,North-East India,3.0,Medium,High,Cowpea
+66,64,82,23.7,53,6.0,579,Black,Sesame,Zaid,High,Sprinkler,East India,1.8,High,Medium,Chilli
+68,45,77,29.6,62,6.9,955,Red,Green Gram,Kharif,Low,Canal,North-East India,2.6,Low,Low,Sugarcane
+58,63,78,29.0,75,6.2,544,Black,Chickpea,Kharif,Low,Sprinkler,North India,7.8,Low,High,Cotton
+20,52,22,31.1,64,7.4,512,Loamy,Maize,Kharif,High,Rainfed,West India,4.6,High,Low,Green Gram
+89,86,59,27.3,74,8.0,834,Black,Onion,Kharif,High,Rainfed,East India,2.9,High,Low,Cotton
+47,46,61,31.1,52,5.6,493,Clay,Cotton,Kharif,Medium,Drip,West India,2.4,Medium,Medium,Sesame
+28,43,35,20.7,53,6.5,584,Clay,Wheat,Rabi,Low,Drip,East India,1.8,Medium,Medium,Chickpea
+56,65,51,27.4,53,8.0,309,Sandy,Tomato,Rabi,Low,Canal,Central India,1.4,Low,High,Sorghum
+46,77,54,26.8,65,6.2,392,Clay,Green Gram,Zaid,Low,Sprinkler,East India,0.8,High,Medium,Sunflower
+54,66,87,28.7,89,6.6,1354,Red,Green Gram,Rabi,Medium,Rainfed,East India,2.5,Low,Medium,Sugarcane
+30,63,39,27.2,60,6.5,598,Black,Onion,Kharif,Low,Drip,North India,3.4,Low,Low,Green Gram
+24,42,34,30.4,49,7.5,545,Red,Sesame,Kharif,Medium,Rainfed,West India,6.9,Low,High,Green Gram
+21,58,35,30.7,72,6.5,660,Loamy,Wheat,Kharif,High,Canal,North-East India,4.5,Low,Low,Black Gram
+36,61,60,24.6,55,6.6,676,Red,Sugarcane,Kharif,High,Canal,West India,2.9,Medium,Medium,Chilli
+46,44,44,32.4,60,6.0,300,Red,Chilli,Rabi,Low,Canal,West India,4.0,Low,Low,Sorghum
+62,56,69,32.3,85,7.4,925,Alluvial,Onion,Kharif,Low,Rainfed,Central India,6.0,Medium,Low,Sugarcane
+87,51,77,16.2,43,6.3,661,Sandy,Sugarcane,Rabi,Medium,Drip,North-East India,3.7,Medium,Medium,Wheat
+85,50,45,27.1,85,6.6,1280,Alluvial,Green Gram,Kharif,Medium,Rainfed,Central India,2.0,High,Medium,Rice
+38,91,24,30.3,60,6.8,532,Sandy,Brinjal,Kharif,Low,Rainfed,East India,2.6,High,Medium,Groundnut
+68,60,81,21.4,58,6.5,503,Red,Black Gram,Rabi,Low,Drip,North India,1.0,High,High,Tomato
+35,71,41,27.6,59,6.0,548,Loamy,Rice,Kharif,Low,Drip,East India,5.1,Medium,High,Groundnut
+38,45,42,29.1,63,7.4,693,Clay,Sugarcane,Kharif,High,Rainfed,Central India,4.8,Medium,Low,Black Gram
+54,50,60,30.3,58,5.8,635,Sandy,Green Gram,Kharif,High,Drip,East India,4.0,Low,Medium,Sesame
+18,65,41,31.9,64,7.3,520,Loamy,Sesame,Zaid,Medium,Canal,Central India,3.1,Low,Medium,Black Gram
+40,67,82,24.8,54,7.0,645,Black,Rice,Rabi,High,Rainfed,North-East India,1.9,High,Medium,Chilli
+27,74,21,28.5,57,5.5,599,Loamy,Cotton,Kharif,Low,Canal,North India,3.5,Medium,Low,Groundnut
+89,52,85,32.2,72,6.4,1374,Clay,Sesame,Rabi,High,Canal,West India,6.1,Low,Medium,Sugarcane
+44,80,61,26.9,63,7.3,585,Clay,Black Gram,Kharif,Medium,Canal,North-East India,6.7,Medium,Medium,Chilli
+44,67,56,23.6,44,6.5,680,Alluvial,Cotton,Kharif,High,Canal,South India,6.0,Low,High,Chilli
+37,52,57,24.1,60,6.8,422,Sandy,Cotton,Rabi,Low,Drip,East India,1.1,Medium,High,Tomato
+69,43,83,19.9,47,6.6,514,Red,Chilli,Rabi,High,Drip,South India,6.7,Low,High,Wheat
+68,60,66,29.2,73,7.0,1442,Alluvial,Brinjal,Kharif,High,Canal,Central India,5.7,Medium,Low,Sugarcane
+66,60,82,24.2,43,6.2,516,Clay,Chickpea,Kharif,High,Canal,West India,6.2,Low,Low,Chilli
+30,64,21,32.2,64,6.6,477,Sandy,Sunflower,Kharif,High,Drip,North-East India,4.2,Low,Low,Black Gram
+26,68,26,28.6,69,6.2,617,Sandy,Maize,Kharif,High,Drip,South India,3.5,High,Medium,Groundnut
+46,66,37,24.0,59,5.6,754,Loamy,Green Gram,Zaid,High,Sprinkler,West India,3.2,High,High,Brinjal
+42,41,33,22.3,44,6.2,329,Sandy,Rice,Rabi,Low,Drip,South India,2.0,High,Low,Chickpea
+66,38,81,29.1,76,6.5,1371,Alluvial,Black Gram,Kharif,High,Canal,West India,2.4,Medium,High,Sugarcane
+53,91,47,28.1,63,6.9,552,Black,Rice,Rabi,Medium,Sprinkler,North-East India,3.1,Low,High,Sunflower
+78,36,92,31.4,69,7.4,1295,Sandy,Chilli,Rabi,High,Canal,North India,2.9,Medium,Low,Sugarcane
+37,40,40,33.0,61,7.1,620,Black,Onion,Kharif,Low,Drip,East India,2.6,Low,Medium,Cowpea
+91,53,91,31.9,65,6.3,1479,Sandy,Tomato,Kharif,Medium,Canal,Central India,1.7,Low,High,Sugarcane
+26,68,33,27.9,73,7.3,492,Red,Black Gram,Kharif,Medium,Drip,West India,5.2,Low,Low,Groundnut
+46,58,86,25.1,52,6.2,525,Sandy,Rice,Rabi,Medium,Drip,Central India,5.3,Medium,High,Tomato
+44,92,55,24.0,43,6.7,473,Black,Rice,Rabi,High,Sprinkler,East India,2.8,Medium,Low,Tomato
+18,63,37,27.0,51,6.8,514,Red,Onion,Kharif,Low,Drip,Central India,2.3,Medium,Medium,Cowpea
+22,56,39,27.1,69,7.2,705,Black,Sorghum,Kharif,High,Canal,East India,4.1,Medium,Low,Black Gram
+63,57,53,28.6,67,5.9,669,Red,Groundnut,Zaid,Medium,Canal,North-East India,6.3,Low,High,Brinjal
+49,58,38,23.7,58,6.3,565,Red,Green Gram,Rabi,High,Rainfed,East India,4.2,High,Medium,Sunflower
+30,52,32,27.1,69,6.8,538,Black,Chilli,Kharif,High,Canal,North India,5.6,Medium,High,Green Gram
+68,51,80,25.2,70,6.3,725,Loamy,Green Gram,Rabi,Medium,Sprinkler,East India,3.2,Medium,Low,Maize
+91,53,89,31.5,76,6.3,979,Sandy,Black Gram,Rabi,Low,Rainfed,North-East India,2.8,Low,Medium,Sugarcane
+60,50,65,28.1,64,7.0,498,Sandy,Tomato,Kharif,High,Rainfed,South India,5.5,Low,Low,Sesame
+41,54,35,29.9,56,6.9,431,Alluvial,Tomato,Zaid,Low,Drip,East India,2.7,Low,Medium,Black Gram
+79,58,78,28.5,79,6.1,1388,Sandy,Groundnut,Rabi,High,Canal,East India,4.6,Medium,Medium,Sugarcane
+38,89,91,26.8,42,6.8,446,Alluvial,Groundnut,Kharif,Low,Drip,West India,3.7,Medium,Medium,Chilli
+45,58,58,30.3,62,7.2,598,Clay,Tomato,Kharif,Low,Rainfed,Central India,4.7,Low,Low,Sesame
+31,62,31,28.2,66,6.9,748,Black,Green Gram,Kharif,High,Drip,North-East India,1.0,Low,Medium,Groundnut
+40,41,23,19.5,30,6.3,364,Sandy,Maize,Rabi,Low,Drip,West India,2.7,Low,Medium,Chickpea
+63,56,48,27.1,70,6.7,426,Loamy,Rice,Zaid,Medium,Sprinkler,East India,4.5,Medium,Medium,Sunflower
+42,66,52,30.1,68,6.1,399,Red,Sugarcane,Kharif,Medium,Rainfed,North-East India,3.3,High,Low,Sesame
+65,52,63,19.7,41,6.1,420,Red,Tomato,Rabi,Medium,Canal,West India,2.5,Low,Medium,Wheat
+27,66,34,30.9,61,6.9,525,Sandy,Rice,Kharif,High,Drip,Central India,2.4,High,Medium,Green Gram
+44,53,66,28.4,54,6.8,505,Clay,Black Gram,Rabi,Low,Sprinkler,East India,1.3,Medium,High,Brinjal
+41,62,57,32.2,59,7.0,473,Alluvial,Sugarcane,Rabi,Low,Canal,North India,4.6,Low,Low,Sorghum
+50,48,47,32.7,63,6.3,475,Loamy,Black Gram,Kharif,Medium,Rainfed,North-East India,2.5,High,High,Sesame
+43,42,82,18.5,53,6.7,379,Red,Chickpea,Rabi,Low,Rainfed,Central India,1.7,Low,Medium,Onion
+33,37,21,20.0,39,7.2,436,Loamy,Chilli,Rabi,Medium,Rainfed,North India,2.4,Low,High,Chickpea
+21,67,27,23.1,47,6.7,597,Loamy,Groundnut,Rabi,Medium,Drip,East India,3.8,Medium,Medium,Chickpea
+37,68,23,29.2,72,7.2,579,Red,Green Gram,Zaid,High,Drip,Central India,4.6,Medium,High,Groundnut
+38,51,57,28.1,56,7.0,766,Red,Cowpea,Zaid,High,Sprinkler,Central India,1.1,High,Medium,Brinjal
+37,68,68,28.0,63,6.4,673,Black,Green Gram,Zaid,High,Sprinkler,South India,5.6,Medium,High,Chilli
+59,66,39,29.7,45,6.0,518,Alluvial,Chilli,Zaid,Medium,Rainfed,West India,2.4,Medium,Medium,Sesame
+48,62,58,22.3,64,6.3,619,Red,Cowpea,Rabi,Medium,Rainfed,East India,0.9,Medium,High,Tomato
+62,56,53,28.7,68,5.7,1456,Alluvial,Cotton,Kharif,High,Canal,Central India,3.4,High,Medium,Rice
+54,79,68,30.7,70,6.9,756,Red,Sesame,Kharif,High,Sprinkler,North-East India,5.5,Medium,Medium,Cotton
+29,48,37,21.6,44,7.3,474,Sandy,Maize,Rabi,High,Rainfed,North-East India,5.8,Low,High,Chickpea
+73,52,83,24.9,69,6.1,631,Clay,Tomato,Kharif,High,Drip,South India,4.3,Low,Medium,Maize
+37,78,52,25.9,51,6.7,666,Sandy,Cotton,Rabi,Medium,Sprinkler,West India,4.7,Low,Low,Chilli
+55,78,63,23.6,61,6.8,506,Red,Cotton,Kharif,Medium,Drip,West India,1.2,High,Medium,Chilli
+67,48,85,15.5,47,6.9,587,Alluvial,Cowpea,Rabi,High,Drip,East India,2.8,Low,High,Wheat
+55,59,40,23.8,57,6.8,439,Clay,Rice,Rabi,Low,Drip,Central India,1.1,Medium,Low,Sunflower
+56,67,58,22.5,60,6.6,440,Red,Chickpea,Rabi,Medium,Canal,South India,1.6,Low,Medium,Tomato
+22,86,27,30.6,56,7.4,723,Red,Chickpea,Kharif,High,Canal,West India,0.6,High,High,Groundnut
+35,36,38,32.3,55,6.7,629,Alluvial,Sorghum,Kharif,Low,Drip,North India,1.2,High,Medium,Cowpea
+19,60,39,30.4,61,7.2,479,Loamy,Brinjal,Kharif,Medium,Drip,North India,2.6,Medium,Low,Groundnut
+53,46,56,30.3,62,6.4,661,Sandy,Chilli,Rabi,Medium,Canal,West India,1.7,Medium,Low,Sorghum
+56,41,57,29.0,65,6.4,489,Clay,Sorghum,Kharif,Medium,Rainfed,North-East India,0.7,High,High,Sesame
+47,63,44,29.2,61,6.7,384,Alluvial,Chickpea,Kharif,Low,Canal,East India,3.5,High,Low,Sorghum
+35,59,26,28.4,69,6.0,495,Alluvial,Onion,Zaid,Medium,Rainfed,Central India,1.8,High,Low,Cowpea
+89,63,53,27.5,65,6.2,1191,Clay,Green Gram,Kharif,High,Canal,North India,4.9,Medium,Low,Rice
+50,87,65,27.6,51,6.8,538,Red,Maize,Kharif,High,Sprinkler,East India,3.0,High,High,Chilli
+59,47,67,29.2,89,6.9,1164,Sandy,Rice,Rabi,Low,Rainfed,South India,3.6,Medium,Low,Sugarcane
+86,40,60,20.7,41,6.6,490,Alluvial,Sesame,Rabi,Medium,Canal,West India,6.9,Medium,Medium,Wheat
+23,39,38,20.6,46,7.4,364,Loamy,Sunflower,Rabi,Medium,Drip,East India,1.4,Medium,High,Chickpea
+52,59,81,31.6,65,6.5,1076,Loamy,Brinjal,Rabi,High,Rainfed,Central India,3.5,High,Medium,Sugarcane
+66,44,50,32.0,47,7.0,429,Loamy,Onion,Rabi,Medium,Canal,South India,5.0,Low,High,Sorghum
+18,65,33,28.4,60,6.1,607,Black,Maize,Kharif,Low,Canal,North-East India,4.3,Medium,Medium,Green Gram
+63,75,36,23.5,54,6.6,448,Clay,Chilli,Rabi,Low,Rainfed,West India,7.5,Low,Medium,Sunflower
+40,56,22,27.9,56,6.0,668,Clay,Brinjal,Zaid,High,Drip,North-East India,3.0,High,Low,Groundnut
+55,64,74,23.5,63,6.9,603,Alluvial,Sunflower,Rabi,High,Sprinkler,North-East India,2.3,Medium,Medium,Tomato
+41,57,37,30.8,74,6.4,549,Black,Sunflower,Kharif,Medium,Rainfed,North-East India,4.6,Medium,Low,Cowpea
+61,58,84,29.9,84,6.4,1130,Loamy,Groundnut,Rabi,Medium,Canal,Central India,7.7,Low,High,Sugarcane
+79,49,53,28.3,68,6.1,1489,Sandy,Sesame,Kharif,High,Canal,West India,1.3,Medium,High,Sugarcane
+38,47,47,23.8,71,5.7,549,Clay,Maize,Rabi,Low,Drip,Central India,3.3,Medium,Medium,Brinjal
+52,53,44,24.2,53,6.9,428,Sandy,Sugarcane,Rabi,Low,Sprinkler,West India,1.5,Medium,High,Sunflower
+18,53,29,32.8,69,7.1,510,Clay,Cotton,Zaid,High,Drip,North-East India,4.7,Medium,Low,Cowpea
+32,47,34,32.5,77,7.4,429,Loamy,Tomato,Zaid,Medium,Canal,North-East India,3.2,Low,Medium,Black Gram
+55,56,54,26.7,79,7.1,835,Sandy,Onion,Rabi,Medium,Rainfed,North India,3.2,Medium,Medium,Maize
+59,51,91,29.3,76,7.3,1153,Alluvial,Cowpea,Rabi,Low,Canal,South India,0.8,Medium,High,Sugarcane
+39,62,65,25.5,72,5.6,627,Loamy,Sorghum,Rabi,High,Canal,North India,2.9,Medium,Medium,Brinjal
+63,66,55,22.6,60,6.7,545,Clay,Black Gram,Rabi,Low,Sprinkler,East India,5.2,Low,Medium,Tomato
+28,61,21,29.3,60,6.7,488,Alluvial,Onion,Kharif,High,Drip,East India,5.6,Low,Low,Cowpea
+52,80,60,28.9,75,6.4,688,Clay,Onion,Kharif,Low,Rainfed,North-East India,2.4,High,Low,Cotton
+42,57,40,30.7,46,7.4,679,Red,Chilli,Rabi,Low,Rainfed,South India,2.2,High,Low,Sorghum
+19,91,30,28.2,71,5.8,619,Alluvial,Chickpea,Zaid,Medium,Canal,South India,7.8,Low,Medium,Groundnut
+84,40,54,24.6,59,7.4,594,Loamy,Sunflower,Rabi,Medium,Canal,North-East India,3.3,High,High,Maize
+90,42,53,30.9,83,7.2,1291,Loamy,Brinjal,Kharif,High,Canal,East India,2.1,Medium,Medium,Sugarcane
+74,61,60,21.5,44,7.4,438,Loamy,Cowpea,Rabi,Low,Drip,Central India,4.0,Low,High,Wheat
+84,41,67,32.3,88,6.1,987,Black,Chickpea,Kharif,Medium,Rainfed,East India,2.5,Medium,High,Sugarcane
+85,60,68,17.7,52,6.2,669,Alluvial,Tomato,Rabi,High,Drip,North India,5.3,Low,High,Wheat
+46,41,52,30.1,50,6.5,424,Red,Sunflower,Kharif,Low,Canal,West India,2.2,High,Low,Sorghum
+62,90,84,23.7,65,7.0,514,Sandy,Sesame,Rabi,Medium,Rainfed,South India,1.2,Medium,Medium,Chilli
+40,44,62,32.6,64,7.6,560,Clay,Cowpea,Rabi,High,Canal,North India,6.8,Low,Medium,Sorghum
+88,67,82,29.5,79,7.3,1249,Black,Black Gram,Kharif,High,Canal,North India,5.1,Medium,Medium,Sugarcane
+53,52,89,29.5,72,7.2,1472,Clay,Cowpea,Kharif,Medium,Canal,Central India,6.9,Medium,Medium,Sugarcane
+54,75,36,27.5,52,7.1,523,Black,Black Gram,Rabi,High,Drip,East India,1.4,High,High,Sunflower
+42,80,62,28.2,66,7.5,412,Clay,Rice,Rabi,High,Rainfed,East India,6.1,Low,Low,Sunflower
+69,64,77,26.5,56,6.5,750,Black,Black Gram,Kharif,Medium,Rainfed,North India,3.0,High,High,Maize
+53,62,79,24.1,79,6.6,610,Clay,Chickpea,Rabi,Low,Drip,North India,1.2,Medium,Medium,Maize
+35,55,29,28.3,68,7.1,477,Loamy,Chilli,Kharif,Medium,Rainfed,North-East India,5.4,Low,Medium,Black Gram
+61,39,52,27.6,69,7.9,389,Sandy,Chilli,Kharif,Medium,Rainfed,North India,5.1,Low,Low,Sorghum
+37,65,92,23.6,64,6.3,592,Clay,Sorghum,Zaid,High,Canal,Central India,2.4,Low,Low,Chilli
+67,37,50,31.3,54,7.1,609,Sandy,Rice,Zaid,Medium,Drip,South India,2.4,Medium,Medium,Sesame
+87,40,81,16.3,54,6.2,570,Loamy,Sugarcane,Rabi,Medium,Drip,East India,0.8,High,High,Wheat
+36,83,42,29.4,50,6.1,629,Alluvial,Green Gram,Zaid,High,Rainfed,Central India,3.5,High,Medium,Groundnut
+56,38,70,30.3,60,7.0,1399,Sandy,Brinjal,Rabi,High,Rainfed,North-East India,2.9,High,Medium,Sugarcane
+29,40,31,18.6,49,8.1,425,Sandy,Maize,Rabi,Medium,Rainfed,Central India,2.7,High,Low,Chickpea
+66,65,76,32.9,73,7.8,570,Sandy,Chilli,Kharif,Medium,Canal,North India,1.3,High,Medium,Cotton
+55,66,91,21.4,41,6.4,485,Clay,Maize,Rabi,High,Canal,North India,3.2,Medium,Low,Tomato
+67,36,79,31.4,87,6.0,1128,Sandy,Maize,Kharif,High,Canal,West India,3.6,Low,Low,Sugarcane
+67,72,47,28.5,62,7.0,498,Clay,Sorghum,Rabi,Medium,Drip,North-East India,5.9,Low,Medium,Sunflower
+42,66,64,28.4,48,5.6,426,Black,Green Gram,Rabi,Medium,Rainfed,South India,1.4,High,Medium,Sorghum
+63,66,71,21.4,59,7.0,637,Black,Chickpea,Rabi,High,Drip,East India,1.8,High,High,Wheat
+43,62,53,32.8,44,6.8,563,Sandy,Chilli,Rabi,Low,Canal,East India,1.8,High,Low,Sorghum
+62,47,85,20.8,56,6.2,379,Black,Rice,Rabi,Low,Rainfed,East India,6.3,Low,High,Onion
+20,55,24,28.4,62,6.9,566,Black,Sorghum,Zaid,High,Drip,North India,2.4,Medium,High,Black Gram
+52,92,53,23.5,58,7.5,367,Red,Rice,Rabi,Medium,Drip,South India,7.1,Low,Medium,Sunflower
+31,58,33,27.8,66,7.0,496,Alluvial,Tomato,Zaid,Low,Drip,East India,3.5,High,High,Black Gram
+45,86,88,27.6,58,6.1,636,Loamy,Chickpea,Rabi,High,Sprinkler,South India,4.6,Medium,Medium,Chilli
+37,41,37,30.5,72,7.2,433,Alluvial,Wheat,Kharif,Medium,Rainfed,West India,7.9,Low,Medium,Cowpea
+38,81,64,24.7,67,6.2,466,Red,Chilli,Zaid,High,Rainfed,North India,5.6,Low,High,Sunflower
+58,63,50,27.2,45,7.9,469,Alluvial,Black Gram,Rabi,Low,Canal,South India,3.4,Low,Low,Sorghum
+81,42,56,29.0,76,5.8,897,Loamy,Sesame,Rabi,Medium,Rainfed,West India,7.3,Low,Medium,Maize
+68,74,92,27.2,52,7.1,465,Alluvial,Sorghum,Kharif,Low,Drip,South India,6.3,Low,High,Chilli
+45,87,81,24.9,43,6.8,685,Sandy,Black Gram,Kharif,High,Sprinkler,Central India,5.6,Medium,High,Chilli
+29,69,33,32.2,59,7.1,637,Sandy,Chilli,Kharif,Low,Rainfed,North India,3.4,Low,Medium,Groundnut
+57,60,58,19.0,57,6.5,421,Black,Rice,Rabi,Low,Drip,East India,4.4,Medium,Low,Onion
+82,44,91,27.0,77,6.3,892,Loamy,Chilli,Rabi,High,Canal,Central India,3.1,Medium,Low,Maize
+82,44,60,29.7,83,6.3,1208,Sandy,Tomato,Kharif,Low,Canal,Central India,3.6,Low,Medium,Rice
+35,78,58,27.3,48,7.2,494,Clay,Sorghum,Rabi,Medium,Rainfed,West India,3.9,Low,Medium,Sunflower
+19,47,22,30.1,74,6.0,562,Clay,Cotton,Kharif,High,Rainfed,West India,1.1,Low,Medium,Green Gram
+49,42,89,17.6,45,6.6,568,Red,Green Gram,Rabi,High,Canal,South India,6.5,Medium,High,Onion
+33,38,36,31.7,61,6.5,663,Red,Brinjal,Kharif,High,Rainfed,West India,4.2,Medium,High,Green Gram
+44,83,72,23.5,55,6.9,553,Black,Cotton,Rabi,High,Sprinkler,North-East India,1.8,Medium,Low,Tomato
+53,66,70,20.0,58,6.9,370,Black,Sunflower,Rabi,Medium,Sprinkler,West India,4.8,Medium,High,Onion
+89,39,67,27.2,86,7.3,1141,Loamy,Onion,Kharif,High,Rainfed,East India,6.0,Medium,High,Sugarcane
+43,61,61,26.1,66,6.1,513,Alluvial,Sugarcane,Rabi,Medium,Canal,West India,3.0,Medium,Low,Brinjal
+49,66,58,24.2,48,7.3,546,Clay,Cowpea,Kharif,Low,Canal,North India,3.3,Low,Medium,Chilli
+36,81,24,27.7,61,7.5,634,Red,Chilli,Kharif,High,Canal,North-East India,4.5,High,High,Groundnut
+48,74,63,25.1,64,6.3,675,Red,Sugarcane,Rabi,Medium,Drip,North-East India,5.3,Medium,High,Tomato
+52,69,54,27.5,62,7.1,496,Black,Wheat,Rabi,Medium,Sprinkler,South India,3.4,Low,Medium,Chilli
+87,64,83,28.3,72,6.8,928,Sandy,Sunflower,Kharif,Medium,Canal,East India,3.3,Low,Medium,Sugarcane
+19,66,32,32.1,73,6.0,513,Black,Wheat,Kharif,High,Canal,North-East India,5.3,Low,Medium,Green Gram
+47,74,60,24.5,65,6.7,557,Sandy,Green Gram,Rabi,Low,Sprinkler,North India,2.3,High,High,Tomato
+29,41,36,21.2,39,6.1,443,Black,Onion,Rabi,High,Drip,South India,2.8,High,Medium,Chickpea
+46,54,67,24.0,55,6.1,544,Alluvial,Onion,Rabi,High,Sprinkler,North-East India,0.9,High,Medium,Sunflower
+40,68,39,30.7,73,6.1,500,Clay,Sunflower,Kharif,Low,Canal,North India,4.6,Medium,Medium,Green Gram
+54,73,59,26.2,54,6.9,539,Red,Sunflower,Rabi,Medium,Rainfed,West India,3.0,High,High,Tomato
+64,45,68,30.7,49,7.4,406,Black,Sunflower,Kharif,Low,Canal,West India,3.3,High,Medium,Sorghum
+68,56,69,18.8,46,6.9,468,Alluvial,Chilli,Rabi,Low,Sprinkler,North-East India,2.7,Medium,Low,Wheat
+47,54,47,26.5,62,6.2,465,Sandy,Chilli,Zaid,High,Rainfed,North-East India,7.4,Low,Medium,Sunflower
+30,61,41,27.5,50,6.7,411,Sandy,Brinjal,Zaid,Medium,Canal,North-East India,1.4,High,High,Green Gram
+58,63,60,21.3,44,6.3,507,Alluvial,Sugarcane,Rabi,High,Drip,East India,6.1,Medium,High,Onion
+68,55,68,28.9,49,7.0,310,Loamy,Cowpea,Kharif,Medium,Rainfed,East India,4.3,Medium,Low,Sorghum
+28,88,23,31.8,75,6.1,596,Clay,Chickpea,Zaid,Medium,Rainfed,East India,1.5,Medium,Medium,Groundnut
+79,63,42,29.0,82,6.1,1228,Alluvial,Sunflower,Kharif,Medium,Rainfed,Central India,2.0,High,Medium,Rice
+82,37,47,29.0,89,6.5,1169,Alluvial,Cowpea,Kharif,Low,Canal,Central India,5.1,Medium,Medium,Rice
+41,69,28,28.2,51,6.1,584,Sandy,Sugarcane,Kharif,Low,Canal,East India,3.5,Medium,Medium,Groundnut
+36,73,55,23.6,44,6.1,561,Alluvial,Green Gram,Rabi,Low,Drip,North India,4.9,Medium,Medium,Chilli
+86,60,63,29.8,66,5.7,792,Red,Sugarcane,Kharif,Medium,Drip,Central India,1.0,High,Medium,Maize
+63,36,69,24.0,53,6.6,891,Clay,Chilli,Rabi,Medium,Rainfed,North India,2.9,Medium,High,Maize
+25,59,41,19.5,31,6.4,531,Red,Brinjal,Rabi,Medium,Rainfed,Central India,5.4,Low,High,Chickpea
+25,56,41,27.4,61,6.7,413,Sandy,Sunflower,Zaid,Low,Canal,East India,4.2,Medium,Medium,Black Gram
+39,65,40,21.7,45,6.9,308,Loamy,Brinjal,Rabi,Low,Rainfed,West India,6.3,Low,Medium,Chickpea
+41,51,51,24.5,57,6.4,762,Sandy,Maize,Rabi,High,Drip,Central India,4.6,Medium,High,Brinjal
+50,83,63,26.5,64,7.2,354,Alluvial,Maize,Rabi,Low,Sprinkler,Central India,1.6,Low,Medium,Sunflower
+44,55,56,28.8,41,6.3,416,Loamy,Chickpea,Kharif,Low,Sprinkler,South India,6.0,Medium,Medium,Chilli
+79,53,78,27.8,67,6.9,1252,Loamy,Wheat,Kharif,Low,Rainfed,North-East India,1.3,Medium,Low,Sugarcane
+60,79,87,26.2,42,6.9,525,Black,Chickpea,Zaid,Low,Drip,South India,2.7,Medium,Medium,Chilli
+47,53,52,27.2,62,6.5,637,Sandy,Chickpea,Zaid,Medium,Drip,Central India,1.8,Low,Medium,Brinjal
+40,54,51,23.0,52,7.3,521,Red,Brinjal,Rabi,Medium,Drip,East India,1.4,Low,Medium,Sunflower
+78,58,56,17.9,59,6.0,649,Red,Sunflower,Rabi,Medium,Canal,West India,5.0,Medium,Low,Wheat
+41,58,62,28.2,69,6.0,551,Alluvial,Onion,Kharif,High,Drip,Central India,1.1,Medium,High,Sesame
+66,69,49,25.0,56,6.1,561,Black,Black Gram,Zaid,Medium,Sprinkler,South India,1.2,Low,Medium,Sunflower
+56,50,56,26.5,67,6.9,881,Clay,Black Gram,Kharif,High,Canal,West India,1.8,High,Medium,Maize
+80,60,53,28.4,87,6.1,1469,Alluvial,Chickpea,Kharif,High,Canal,South India,4.4,High,Medium,Sugarcane
+38,85,56,27.2,42,7.4,672,Clay,Green Gram,Rabi,High,Rainfed,South India,4.1,Medium,Low,Chilli
+80,66,86,27.0,67,7.2,818,Alluvial,Tomato,Rabi,Medium,Sprinkler,South India,4.2,Medium,Medium,Maize
+59,85,53,26.8,49,6.9,681,Clay,Groundnut,Rabi,Medium,Sprinkler,Central India,1.0,Medium,Low,Tomato
+62,49,44,26.4,62,6.0,702,Loamy,Cotton,Zaid,High,Drip,Central India,2.9,Low,Medium,Brinjal
+81,46,66,31.2,77,6.9,1476,Sandy,Chilli,Kharif,High,Rainfed,West India,2.7,Medium,Low,Sugarcane
+58,39,88,28.7,74,6.7,1444,Alluvial,Chilli,Rabi,High,Canal,North India,3.6,Medium,Medium,Sugarcane
+82,39,70,15.9,45,6.5,581,Loamy,Onion,Rabi,High,Sprinkler,North India,1.1,High,High,Wheat
+23,48,35,29.4,47,7.1,634,Sandy,Brinjal,Kharif,Medium,Drip,East India,1.5,Medium,Medium,Green Gram
+35,57,89,23.3,50,6.7,657,Clay,Sugarcane,Rabi,High,Canal,West India,4.5,Medium,Medium,Tomato
+56,84,59,23.5,59,6.9,513,Alluvial,Maize,Kharif,Low,Drip,North India,4.4,Medium,High,Chilli
+44,72,59,21.0,43,7.0,592,Sandy,Wheat,Rabi,Low,Sprinkler,East India,3.2,High,High,Tomato
+42,68,47,23.1,62,6.8,366,Loamy,Rice,Zaid,Low,Sprinkler,South India,4.5,Low,High,Sunflower
+33,70,21,28.1,52,7.0,692,Red,Chickpea,Zaid,Medium,Drip,West India,6.4,Low,Medium,Groundnut
+64,78,71,22.3,52,6.4,415,Loamy,Chickpea,Rabi,Low,Sprinkler,Central India,5.4,Medium,Low,Tomato
+46,85,76,24.3,49,6.9,630,Sandy,Sunflower,Zaid,High,Drip,North-East India,6.1,Medium,Medium,Chilli
+58,73,56,27.9,63,7.0,557,Clay,Black Gram,Zaid,High,Sprinkler,North-East India,3.2,Medium,High,Sunflower
+45,62,65,32.5,63,7.1,607,Clay,Brinjal,Kharif,Low,Rainfed,South India,7.9,Low,Medium,Sesame
+68,74,62,30.3,56,7.0,576,Loamy,Brinjal,Kharif,Medium,Sprinkler,East India,5.5,Low,High,Cotton
+35,70,64,28.6,41,7.3,655,Black,Cotton,Kharif,High,Drip,North India,0.9,Medium,Low,Chilli
+62,53,46,27.8,68,6.6,524,Loamy,Sorghum,Rabi,Low,Rainfed,West India,3.3,Low,High,Brinjal
+49,87,62,28.4,49,7.4,499,Alluvial,Chickpea,Rabi,Low,Rainfed,East India,5.8,Low,High,Sunflower
+39,58,86,25.8,41,6.9,462,Clay,Wheat,Rabi,Medium,Sprinkler,East India,4.5,Low,High,Chilli
+81,44,43,29.5,62,5.6,1359,Sandy,Cotton,Kharif,Medium,Rainfed,South India,6.0,Medium,Low,Rice
+32,42,36,30.1,46,5.8,541,Clay,Cotton,Kharif,Medium,Rainfed,North-East India,3.6,Low,Low,Cowpea
+44,50,90,19.0,54,6.1,400,Red,Sugarcane,Rabi,Low,Drip,West India,2.8,Medium,Medium,Onion
+52,75,91,23.4,54,6.9,410,Loamy,Cowpea,Rabi,Low,Drip,Central India,1.1,High,Medium,Tomato
+91,58,73,31.8,88,6.9,958,Clay,Groundnut,Rabi,Low,Canal,South India,3.9,High,Low,Sugarcane
+38,72,37,28.2,58,6.9,382,Loamy,Chickpea,Rabi,Medium,Sprinkler,Central India,1.0,Medium,Low,Sunflower
+53,58,85,24.8,55,6.3,652,Clay,Cotton,Rabi,Medium,Rainfed,North-East India,5.1,Low,High,Maize
+63,63,62,29.7,59,6.9,778,Alluvial,Cowpea,Kharif,High,Canal,North India,2.5,High,Low,Maize
+25,58,25,31.6,65,6.2,489,Sandy,Tomato,Kharif,Low,Canal,East India,3.3,High,Medium,Green Gram
+29,53,41,27.7,55,7.1,394,Clay,Groundnut,Kharif,Low,Rainfed,West India,2.6,High,Low,Green Gram
+57,65,89,27.6,78,7.4,1114,Sandy,Sesame,Kharif,Low,Canal,West India,3.8,Medium,High,Sugarcane
+34,58,31,31.0,65,6.0,668,Black,Cotton,Kharif,High,Canal,South India,1.0,High,Low,Black Gram
+75,70,67,27.6,74,6.3,796,Black,Maize,Kharif,Medium,Rainfed,East India,3.4,Medium,Medium,Cotton
+38,36,22,22.1,40,6.7,578,Red,Rice,Rabi,Low,Drip,North India,1.6,Medium,Low,Chickpea
+34,67,28,24.3,38,6.3,308,Black,Sorghum,Rabi,Low,Rainfed,West India,1.5,Low,Medium,Chickpea
+37,60,40,29.3,45,6.1,416,Sandy,Tomato,Kharif,Medium,Rainfed,North India,5.5,Medium,Medium,Cowpea
+82,38,86,15.8,46,7.5,521,Clay,Green Gram,Rabi,Low,Sprinkler,West India,2.5,High,Low,Wheat
+37,83,63,21.1,64,6.1,661,Alluvial,Black Gram,Rabi,Medium,Canal,South India,3.5,High,High,Tomato
+24,53,36,29.3,77,6.6,440,Sandy,Onion,Zaid,Low,Drip,Central India,3.0,Low,Low,Black Gram
+74,56,78,27.3,72,6.2,626,Black,Groundnut,Rabi,Medium,Canal,North-East India,1.8,Medium,Medium,Maize
+35,59,51,24.6,62,6.3,537,Sandy,Brinjal,Rabi,High,Rainfed,West India,0.9,High,Low,Sunflower
+21,51,34,27.4,58,6.7,502,Red,Sugarcane,Kharif,Low,Rainfed,East India,3.7,Low,High,Cowpea
+38,66,19,33.0,55,6.7,627,Loamy,Groundnut,Kharif,Medium,Drip,North-East India,1.5,Low,Low,Green Gram
+84,55,48,27.5,73,6.6,1444,Loamy,Sugarcane,Kharif,High,Canal,Central India,4.4,Low,High,Rice
+36,63,22,32.3,59,6.2,508,Clay,Onion,Zaid,Low,Drip,South India,3.0,Medium,Medium,Cowpea
+24,36,20,30.7,68,6.9,614,Sandy,Chilli,Kharif,Medium,Canal,North-East India,1.9,Low,High,Black Gram
+38,50,23,22.8,52,7.8,383,Sandy,Chilli,Rabi,Medium,Drip,North India,5.7,Low,High,Chickpea
+36,56,59,24.8,52,6.6,462,Alluvial,Cotton,Rabi,High,Rainfed,Central India,6.2,Low,Low,Sunflower
+38,58,42,19.3,46,6.9,402,Clay,Maize,Rabi,Medium,Drip,East India,5.4,Low,Low,Chickpea
+37,61,54,28.9,56,6.6,398,Alluvial,Rice,Rabi,Low,Drip,West India,3.3,Medium,Medium,Sunflower
+89,67,60,27.7,53,6.9,867,Alluvial,Green Gram,Rabi,Medium,Sprinkler,West India,2.0,High,High,Maize
+63,47,90,20.7,49,6.5,552,Alluvial,Green Gram,Rabi,High,Sprinkler,West India,2.0,High,Medium,Onion
+39,65,62,23.1,63,5.6,771,Black,Maize,Rabi,High,Drip,South India,1.7,Medium,High,Brinjal
+56,53,55,23.5,54,6.2,773,Loamy,Cowpea,Rabi,High,Canal,North-East India,1.8,Low,Low,Brinjal
+50,56,64,29.9,55,6.7,431,Clay,Chilli,Zaid,Low,Drip,North-East India,3.8,Low,Medium,Sesame
+33,55,34,32.4,49,6.4,506,Red,Maize,Kharif,Medium,Rainfed,West India,3.9,Low,Low,Green Gram
+33,37,38,19.9,46,6.3,372,Alluvial,Cotton,Rabi,Medium,Drip,North India,5.2,Low,High,Chickpea
+55,51,59,28.2,54,6.2,575,Loamy,Cowpea,Rabi,Low,Sprinkler,Central India,1.4,Low,Medium,Brinjal
+56,41,58,27.6,65,7.0,1254,Loamy,Green Gram,Rabi,High,Rainfed,North India,5.0,High,High,Sugarcane
+62,35,80,26.3,73,7.2,576,Sandy,Chilli,Rabi,Low,Drip,North-East India,4.7,Medium,High,Maize
+38,50,44,23.4,72,6.7,650,Black,Sunflower,Zaid,Low,Drip,Central India,5.8,Low,Medium,Brinjal
+20,38,31,19.2,52,7.4,435,Red,Sunflower,Rabi,Low,Drip,Central India,6.8,Low,High,Chickpea
+19,39,29,30.6,70,5.6,432,Clay,Sugarcane,Kharif,Low,Rainfed,North-East India,4.8,Low,High,Cowpea
+41,64,21,29.7,52,7.4,532,Loamy,Cotton,Kharif,Medium,Drip,South India,1.3,High,High,Black Gram
+29,39,30,27.2,73,6.5,701,Red,Cotton,Kharif,High,Canal,East India,4.1,Medium,Low,Black Gram
+60,62,56,32.7,53,6.7,653,Sandy,Groundnut,Kharif,High,Rainfed,North-East India,3.7,Low,Medium,Sorghum
+56,43,85,29.8,58,7.0,535,Alluvial,Brinjal,Rabi,Low,Rainfed,West India,4.2,Low,High,Maize
+56,54,38,31.0,61,6.0,630,Sandy,Tomato,Kharif,Medium,Drip,South India,5.4,Medium,Low,Sesame
+61,46,66,26.5,57,6.6,537,Red,Sesame,Rabi,Low,Sprinkler,Central India,7.7,Low,Low,Maize
+71,55,72,27.7,51,7.0,717,Black,Groundnut,Kharif,High,Drip,South India,7.1,Low,High,Maize
+36,59,46,28.0,54,7.0,591,Clay,Chickpea,Rabi,High,Drip,North-East India,1.5,High,High,Sunflower
+62,36,53,31.9,67,7.1,651,Loamy,Sugarcane,Kharif,Medium,Canal,West India,2.6,Low,Medium,Sorghum
+20,57,26,29.3,69,6.3,572,Sandy,Sunflower,Kharif,High,Drip,West India,4.0,High,Low,Cowpea
+67,77,51,25.0,52,6.6,481,Sandy,Tomato,Rabi,High,Rainfed,East India,1.9,High,Low,Sunflower
+32,38,23,32.8,54,6.6,714,Red,Sesame,Zaid,High,Canal,North India,6.4,Medium,Medium,Black Gram
+56,54,59,25.5,61,7.3,364,Red,Black Gram,Rabi,Low,Sprinkler,Central India,1.2,High,Low,Sunflower
+50,57,70,25.2,51,6.4,684,Alluvial,Sugarcane,Rabi,High,Drip,Central India,5.3,Medium,High,Chilli
+39,60,41,29.0,59,7.2,501,Red,Groundnut,Rabi,Low,Rainfed,East India,2.9,Medium,Medium,Sorghum
+48,55,58,25.0,59,5.6,634,Black,Sunflower,Rabi,High,Canal,South India,3.3,High,Medium,Brinjal
+54,85,57,24.9,50,6.6,535,Alluvial,Sunflower,Rabi,High,Rainfed,North-East India,1.8,High,Medium,Tomato
+41,70,36,27.9,48,6.3,558,Red,Brinjal,Kharif,Low,Canal,East India,1.4,Medium,Low,Groundnut
+32,52,40,28.5,63,6.9,617,Red,Sugarcane,Kharif,Low,Canal,North India,5.7,Low,Low,Black Gram
+29,65,24,29.4,48,5.6,609,Clay,Sesame,Zaid,Low,Drip,West India,0.6,High,High,Cowpea
+32,75,35,27.3,71,5.5,726,Red,Green Gram,Kharif,High,Canal,North-East India,2.3,Medium,Medium,Groundnut
+25,49,29,20.7,36,7.9,565,Sandy,Chilli,Rabi,Low,Drip,North India,1.9,High,Medium,Chickpea
+74,60,54,27.9,77,6.4,1481,Alluvial,Maize,Kharif,Medium,Rainfed,West India,2.9,High,Medium,Sugarcane
+41,77,69,23.3,50,6.8,655,Red,Cowpea,Rabi,High,Rainfed,West India,5.5,Medium,Low,Tomato
+72,60,64,32.1,76,7.0,1081,Black,Sunflower,Rabi,Low,Canal,East India,5.6,Medium,Medium,Sugarcane
+74,72,78,32.7,74,7.9,562,Loamy,Tomato,Kharif,Medium,Drip,Central India,3.3,Medium,Low,Cotton
+30,65,30,32.9,61,7.1,508,Clay,Cotton,Kharif,Medium,Rainfed,West India,2.9,Low,High,Cowpea
+71,42,68,32.7,74,6.3,1264,Clay,Black Gram,Kharif,Low,Rainfed,South India,5.7,Medium,High,Sugarcane
+78,47,82,30.9,74,7.4,1399,Red,Brinjal,Rabi,High,Canal,Central India,6.8,Low,Medium,Sugarcane
+61,63,57,31.3,72,6.5,908,Red,Maize,Kharif,Low,Canal,South India,4.0,Medium,Medium,Sugarcane
+64,45,38,25.8,54,5.7,500,Red,Chickpea,Zaid,Low,Rainfed,South India,3.7,High,High,Brinjal
+32,43,27,24.3,42,6.7,508,Loamy,Sunflower,Rabi,Medium,Drip,North-East India,3.6,Low,High,Chickpea
+84,46,61,31.0,75,7.4,1280,Clay,Rice,Kharif,Medium,Canal,West India,6.4,Low,Low,Sugarcane
+62,59,80,32.8,67,6.1,1240,Alluvial,Chickpea,Kharif,High,Canal,West India,3.3,High,Medium,Sugarcane
+48,37,54,22.8,42,6.6,353,Clay,Sunflower,Rabi,Medium,Canal,Central India,4.6,Medium,Medium,Onion
+71,45,61,15.9,48,7.4,420,Red,Sesame,Rabi,Medium,Drip,East India,5.2,Medium,Medium,Wheat
+78,64,77,27.0,66,6.6,795,Black,Sesame,Kharif,Medium,Rainfed,East India,2.6,Medium,Low,Maize
+50,62,49,28.2,60,5.7,583,Black,Tomato,Kharif,Medium,Canal,North India,7.5,Low,Medium,Sorghum
+60,71,57,25.3,64,6.7,560,Black,Wheat,Rabi,High,Sprinkler,North-East India,2.3,High,Medium,Tomato
+51,50,46,28.6,59,7.8,507,Red,Chickpea,Kharif,High,Canal,Central India,2.1,High,Low,Sorghum
+63,37,39,23.5,59,5.6,510,Clay,Sunflower,Rabi,Medium,Drip,Central India,0.8,High,Medium,Brinjal
+33,48,24,23.4,38,8.2,475,Red,Maize,Rabi,High,Drip,South India,2.5,High,Medium,Chickpea

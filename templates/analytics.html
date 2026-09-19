@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block title %}Analytics{% endblock %}
+{% block content %}
+
+<section class="page-head">
+    <h1>&#128200; Analytics Dashboard</h1>
+    <p>Charts generated from your saved recommendations and model training results.</p>
+</section>
+
+<div class="cards-grid two">
+    <div class="card chart-card">
+        <h3 class="card-title">Soil NPK (last 10 records)</h3>
+        <canvas id="npkChart" height="220"></canvas>
+        {% if not series %}<p class="muted">No data yet.</p>{% endif %}
+    </div>
+    <div class="card chart-card">
+        <h3 class="card-title">Model Accuracy Comparison</h3>
+        <canvas id="modelChart" height="220"></canvas>
+        {% if not models %}<p class="muted">Train models first (<code>python train_model.py</code>).</p>{% endif %}
+    </div>
+    <div class="card chart-card">
+        <h3 class="card-title">Score Trends</h3>
+        <canvas id="trendChart" height="220"></canvas>
+        {% if not series %}<p class="muted">No data yet.</p>{% endif %}
+    </div>
+    <div class="card chart-card">
+        <h3 class="card-title">Crop Family Rotation Mix</h3>
+        <canvas id="familyChart" height="220"></canvas>
+        {% if not series %}<p class="muted">No data yet.</p>{% endif %}
+    </div>
+    <div class="card chart-card">
+        <h3 class="card-title">Recommended Crops</h3>
+        <canvas id="cropChart" height="220"></canvas>
+        {% if not series %}<p class="muted">No data yet.</p>{% endif %}
+    </div>
+    <div class="card chart-card">
+        <h3 class="card-title">Soil Health Breakdown (latest)</h3>
+        <canvas id="soilBreakChart" height="220"></canvas>
+        {% if not series %}<p class="muted">No data yet.</p>{% endif %}
+    </div>
+</div>
+
+<div class="alert alert-warning disclaimer">
+    Charts reflect data generated within this application. Figures are model-based estimates;
+    actual results may vary with real farm conditions.
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const series = {{ series | tojson }};
+const cropsChart = {{ crops_chart | tojson }};
+const familiesChart = {{ families_chart | tojson }};
+const models = {{ models | tojson }};
+
+window.addEventListener('DOMContentLoaded', function () {
+    const labels = series.map(s => s.label);
+
+    if (series.length) {
+        // NPK bar chart
+        new Chart(document.getElementById('npkChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: 'N', data: series.map(s => s.n), backgroundColor: '#2E7D32' },
+                    { label: 'P', data: series.map(s => s.p), backgroundColor: '#F9A825' },
+                    { label: 'K', data: series.map(s => s.k), backgroundColor: '#66BB6A' },
+                ]
+            },
+            options: { scales: { y: { beginAtZero: true } } }
+        });
+
+        // Scores trend
+        new Chart(document.getElementById('trendChart'), {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: 'Rotation', data: series.map(s => s.rotation), borderColor: '#2E7D32', tension: 0.3, fill: false },
+                    { label: 'Soil Health', data: series.map(s => s.soil_health), borderColor: '#F9A825', tension: 0.3, fill: false },
+                    { label: 'Sustainability', data: series.map(s => s.sustainability), borderColor: '#66BB6A', tension: 0.3, fill: false },
+                ]
+            }
+        });
+
+        // Family pie
+        new Chart(document.getElementById('familyChart'), {
+            type: 'pie',
+            data: {
+                labels: Object.keys(familiesChart),
+                datasets: [{ data: Object.values(familiesChart),
+                    backgroundColor: ['#2E7D32', '#66BB6A', '#F9A825', '#EF6C00', '#7B1FA2'] }]
+            }
+        });
+
+        // Crop counts
+        new Chart(document.getElementById('cropChart'), {
+            type: 'bar',
+            data: {
+                labels: Object.keys(cropsChart),
+                datasets: [{ label: 'Times recommended', data: Object.values(cropsChart), backgroundColor: '#2E7D32' }]
+            }
+        });
+    }
+
+    if (models.length) {
+        new Chart(document.getElementById('modelChart'), {
+            type: 'bar',
+            data: {
+                labels: models.map(m => m.model_name),
+                datasets: [
+                    { label: 'Accuracy %', data: models.map(m => +(m.accuracy * 100).toFixed(1)), backgroundColor: models.map(m => m.is_best ? '#F9A825' : '#A5D6A7') },
+                    { label: 'F1 %', data: models.map(m => +(m.f1 * 100).toFixed(1)), backgroundColor: models.map(m => m.is_best ? '#EF6C00' : '#66BB6A') },
+                ]
+            },
+            options: { scales: { y: { beginAtZero: true, max: 100 } } }
+        });
+    }
+});
+</script>
+{% endblock %}

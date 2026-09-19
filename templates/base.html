@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SMART CROP ROTATION{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a class="brand" href="{{ url_for('index') }}">
+            <span class="brand-icon">&#127807;</span>
+            <span class="brand-text">
+                <strong>SMART CROP ROTATION</strong>
+                <small>AI-Based Intelligent Crop Rotation Recommendation System</small>
+            </span>
+        </a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('recommend') }}">Recommend</a>
+            <a href="{{ url_for('history') }}">History</a>
+            <a href="{{ url_for('analytics') }}">Analytics</a>
+            <a href="{{ url_for('model_page') }}">Model</a>
+            <a href="{{ url_for('about') }}">About</a>
+            {% if logged_in %}
+                <span class="nav-user">&#128100; {{ current_user }}</span>
+                <a class="btn btn-ghost btn-sm" href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+                <a class="btn btn-ghost btn-sm" href="{{ url_for('login') }}">Login</a>
+                <a class="btn btn-gold btn-sm" href="{{ url_for('register') }}">Register</a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="container">
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<main class="{% block main_class %}container{% endblock %}">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p><strong>SMART CROP ROTATION</strong> &mdash; Intelligent Crop Advisory &mdash; &copy; 2026</p>
+        <p class="disclaimer">
+            Recommendations are generated from agronomic models and provided as
+            <em>decision-support suggestions</em>. Actual outcomes depend on local soil, weather
+            and management conditions &mdash; always consult a certified agricultural expert
+            before making planting decisions.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+# SMART CROP ROTATION - Python dependencies
+# Python 3.11+ (the version ranges below include wheels for 3.11-3.14)
+
+Flask>=3.0
+pandas>=2.3
+numpy>=2.2
+scikit-learn>=1.6
+joblib>=1.4
+matplotlib>=3.9
+werkzeug>=3.0
