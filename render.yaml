@@ -25,10 +25,4 @@ services:
     envVars:
       - key: SECRET_KEY
         generateValue: true
-    # SQLite lives on Render's ephemeral disk. The host account and
-    # history reset whenever the service redeploys (fine for a demo /
-    # viva). For a persistent DB later, swap to Render Postgres.
-    disk:
-      name: crop-rotation-data
-      mountPath: /data
-      sizeGB: 1
+
