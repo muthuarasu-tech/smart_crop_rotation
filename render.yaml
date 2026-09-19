@@ -1,0 +1,34 @@
+# ============================================================
+# render.yaml - Render Blueprint (Infrastructure-as-Code)
+# ------------------------------------------------------------
+# Deploy on Render free tier:
+#   1. Push this file to GitHub
+#   2. Render dashboard -> New -> Blueprint -> paste the repo URL
+#   3. Render creates the web service + a free 1 GiB Redis? No - just
+#      the web service. It auto-deploys on every push to main.
+#
+# Build runs `pip install -r requirements.txt && python train_model.py`
+# so the 13.7 MB model is trained on Render at build time (it is
+# gitignored, so it never travels through git). Training is fully
+# offline - reads data/crop_dataset.csv from the repo.
+# ============================================================
+
+services:
+  - type: web
+    name: smart-crop-rotation
+    runtime: python
+    plan: free
+    autoDeploy: true
+    buildCommand: "pip install -r requirements.txt && python train_model.py"
+    startCommand: "gunicorn \"app:create_app()\" --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 300"
+    healthCheckPath: /api/health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+    # SQLite lives on Render's ephemeral disk. The host account and
+    # history reset whenever the service redeploys (fine for a demo /
+    # viva). For a persistent DB later, swap to Render Postgres.
+    disk:
+      name: crop-rotation-data
+      mountPath: /data
+      sizeGB: 1
